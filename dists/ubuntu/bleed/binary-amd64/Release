@@ -1,0 +1,11 @@
+Archive: ubuntu
+Version: 14.04
+Component: bleed
+Origin: Kingtiger-Buildbot
+Label: Kingtigers-PPA
+Date: Thu, 14 Aug 2014  16:57:21 EDT
+Architectures: amd64 i386
+Description: Kingtigers Bleeding-Edge Custom Repository
+MD5Sum:
+ 1e7a3cacbd33d17b98c5655c87786d24           122869 Packages
+ bc5c20bacbd90436faefefb47af0231e            30868 Packages.gz

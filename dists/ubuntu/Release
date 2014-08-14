@@ -1,0 +1,18 @@
+Origin: Kingtiger-Buildbot
+Label: Kingtigers-PPA
+Suite: ubuntu
+Version: 13.04
+Codename: raring
+Date: Thu, 14 Aug 2014  16:57:21 EDT
+Architectures: amd64 i386 armhf powerpc
+Components: bleed main restricted universe multiverse
+Description: Kingtigers Repository
+MD5Sum:
+ 1e7a3cacbd33d17b98c5655c87786d24           122869 bleed/binary-amd64/Packages
+ bc5c20bacbd90436faefefb47af0231e            30868 bleed/binary-amd64/Packages.gz
+ 1992592631899f7d7969ffacdca7fd66              346 bleed/binary-amd64/Release
+ 1e7a3cacbd33d17b98c5655c87786d24           122869 bleed/binary-i386/Packages
+ bc5c20bacbd90436faefefb47af0231e            30868 bleed/binary-i386/Packages.gz
+ 1992592631899f7d7969ffacdca7fd66              346 bleed/binary-i386/Release
+ d41d8cd98f00b204e9800998ecf8427e                0 main/binary-amd64/Packages
+ 626de7c9c50ce8c2b787283d536db973               29 main/binary-amd64/Packages.gz

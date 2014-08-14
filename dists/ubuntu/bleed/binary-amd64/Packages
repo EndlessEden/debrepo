@@ -1,0 +1,3032 @@
+Package: amd-libopencl1
+Source: fglrx-driver
+Version: 1:13.8~beta1-2
+Architecture: amd64
+Maintainer: Fglrx packaging team <pkg-fglrx-devel@lists.alioth.debian.org>
+Installed-Size: 116
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.2.5)
+Recommends: opencl-icd | amd-opencl-icd
+Conflicts: amd-app, libopencl1
+Breaks: amd-opencl-dev (<< 1:13.4-4)
+Replaces: libopencl1
+Provides: libopencl-1.1-1, libopencl-1.2-1, libopencl1
+Filename: ./pool/deb/amd-opencl/amd-libopencl1_13.8~beta1-2_amd64.deb
+Size: 42786
+MD5sum: ef117617a5aa3d8e8dd47545588409c5
+SHA1: 1129459cf66e2aab606a8c58f39dac908dbffaf1
+SHA256: 99a189641262fcdd733dd160d8e61e9d3b231fbfc81546cdceb980b6ca3f463c
+Section: non-free/x11
+Priority: extra
+Multi-Arch: same
+Homepage: http://developer.amd.com/zones/openclzone/pages/default.aspx
+Description: AMD OpenCL ICD Loader library
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ The OpenCL installable client driver loader (ICD Loader) acts as a dispatcher
+ between an OpenCL application and one (or more) installable client drivers
+ (ICD) that can be from any vendor. At least one ICD (and the corresponding
+ hardware) is required to run OpenCL applications.
+ .
+ This package contains the ICD Loader library provided by AMD.
+
+Package: amd-opencl-icd
+Source: fglrx-driver
+Version: 1:13.8~beta1-2
+Architecture: amd64
+Maintainer: Fglrx packaging team <pkg-fglrx-devel@lists.alioth.debian.org>
+Installed-Size: 37152
+Pre-Depends: multiarch-support
+Depends: libopencl1, libc6 (>= 2.3.4), libgcc1 (>= 1:4.1.1)
+Enhances: libopencl1
+Conflicts: amd-app, amd-opencl-icd-ia32, amd-opencl-icd-virtual
+Replaces: amd-opencl-icd-virtual
+Provides: amd-opencl-icd-virtual, opencl-icd
+Filename: ./pool/deb/amd-opencl/amd-opencl-icd_13.8~beta1-2_amd64.deb
+Size: 9568512
+MD5sum: 270e480aded3eff95060ffe514bd7a47
+SHA1: 5ad37df34bc8e0d94c115706c3fc30bcf7173135
+SHA256: 2d24a144eb387f74d7738a7d732a571680507784fb800e51e9ac72da0ccb5cd4
+Section: non-free/x11
+Priority: extra
+Multi-Arch: same
+Homepage: http://developer.amd.com/zones/openclzone/pages/default.aspx
+Description: AMD OpenCL ICD
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package provides the AMD installable client driver (ICD) for OpenCL
+ which supports AMD GPUs (requires the fglrx driver) as well as CPUs (from
+ any vendor, no driver required).
+ .
+ This driver release supports the following graphics adapter families:
+ AMD Radeon HD 7000, AMD Radeon HD 6000, and AMD Radeon HD 5000.
+ .
+ For older models try the fglrx-legacy-driver package.
+
+Package: amdoverdrivectrl
+Version: 1.2.1
+Architecture: amd64
+Maintainer: Thorsten Gilling <tgilling@web.de>
+Installed-Size: 576
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libwxbase2.8-0 (>= 2.8.10.1), libwxgtk2.8-0 (>= 2.8.10.1)
+Filename: ./pool/deb/amdoverdrivectrl/amdoverdrivectrl_1.2.1_amd64.deb
+Size: 205594
+MD5sum: f400839c4984b0aa5de438e72390e243
+SHA1: f8e8841dae477d9740beba568cae83e04c124d4f
+SHA256: 1003c038b640d544326acb3773e8b4c6809dd26854c4c53fbe2b8cc72e386434
+Section: utils
+Priority: optional
+Description: Control AMD Catalyst Overdrive settings
+ This tool let's you control the frequency and fan settings of your
+ AMD/ATI video card. It depends on the proprietary AMD/ATI Catalyst
+ display driver and makes use of the AMD Display Library (ADL) library.
+
+Package: autoconf2.7
+Version: 1:2.70-dev-GIT:851ef517963d1e1966c4082530d5e87ba0a415ab-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 6028
+Replaces: autoconf
+Provides: autoconf
+Filename: ./pool/deb/gnu/autoconf/autoconf2.7_2.70-dev-GIT:851ef517963d1e1966c4082530d5e87ba0a415ab-1_amd64.deb
+Size: 1987888
+MD5sum: 9deabb52be43955e1489b442270726df
+SHA1: 5069e6481599903e60ad888dcbc9f8d43b30e215
+SHA256: 896879f43b1d62881e49a686817954500aca719e7ef459bf31572e53ae4771ac
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: base-files
+Version: 7.2ubuntu6
+Architecture: amd64
+Essential: yes
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 231
+Pre-Depends: awk
+Breaks: initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
+Replaces: base, dpkg (<= 1.15.0), miscutils
+Provides: base
+Filename: ./pool/deb/base-files/base-files_7.2ubuntu6_amd64.deb
+Size: 77294
+MD5sum: 1340121f758c1c0f2d65499f5aabf1d4
+SHA1: 9ac5c18ce0e4b9381e5dc7580c28db27369f7133
+SHA256: 74dce85d7a059ac8a5f464e3b0ad3e53c83fa67e8a19f08a4a53ef222e94167c
+Section: admin
+Priority: required
+Multi-Arch: foreign
+Description: Debian base system miscellaneous files
+ This package contains the basic filesystem hierarchy of a Debian system, and
+ several important miscellaneous files, such as /etc/debian_version,
+ /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,
+ and the text of several common licenses in use on Debian systems.
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: cutemupen
+Source: cutemupen
+Version: 2:2.00~DEV-SVN:-201301211241
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 10000
+Depends: libgl1-mesa-glx | libgl1, libsdl1.2debian, libstdc++6, zlib1g, libc6, libqtGui4, libqt4-core, libqt4-opengl, mupen64plus
+Conflicts: cutemupen
+Replaces: cutemupen
+Provides: cutemupen
+Filename: ./pool/deb/mupen64plus/cutemupen_2.00~DEV-SVN:-201301211241_amd64.deb
+Size: 142488
+MD5sum: acc1397da8e27fa9c9dd62d42698743c
+SHA1: d1aa57c6fa53d7b7ec55ac7c181edd3dced8d157
+SHA256: 4192320de7bbe0209d0a87f0f4fbd1d48f13cefe990abd39f32bf02d5f73b66c
+Section: games
+Priority: extra
+Description: Package Handcreated by Kingtiger
+
+Package: desmume
+Version: 1:20130609.4754~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 7900
+Depends: libc6
+Conflicts: desmume-doc, desmume-dev, desmume
+Provides: desmume-doc, desmume-dev, desmume
+Filename: ./pool/deb/desmume/desmume_20130609.4754~raring1-1_amd64.deb
+Size: 2432080
+MD5sum: d5a6ef2da3d1bfc36a7452359bc9772f
+SHA1: b096c388898f63966488ef9fab1df32ad7546b3e
+SHA256: f77ab8ee3041ae6a6fcac4d134b9eaa856b12df761e6a95e6cbda0c1bf27cde8
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: dropbox
+Version: 1.6.0
+Architecture: amd64
+Maintainer: Rian Hunter <rian@dropbox.com>
+Installed-Size: 404
+Depends: libatk1.0-0 (>= 1.20.0), libc6 (>= 2.4), libcairo2 (>= 1.6.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.12.0), libpango1.0-0 (>= 1.20.1), procps, python (>= 2.5), python-gtk2 (>= 2.12)
+Suggests: nautilus (>= 2.16.0), python-gpgme (>= 0.1)
+Breaks: nautilus-dropbox
+Replaces: nautilus-dropbox
+Provides: nautilus-dropbox
+Filename: ./pool/deb/dropbox/dropbox_1.6.0_amd64.deb
+Size: 94178
+MD5sum: 59d358843700afaf69bcded4218b6d51
+SHA1: c319d367ab4532caf2b1b565bfc68dafdd5860f6
+SHA256: 073a3899752413a1b9c886b0fa0eaf67652b88f9ea310c94f03f27093e6a58f6
+Section: gnome
+Priority: optional
+Homepage: https://www.dropbox.com/
+Description: cloud synchronization engine - CLI and Nautilus extension
+ Dropbox is a free service that lets you bring your photos, docs, and videos
+ anywhere and share them easily.
+ .
+ This package provides a command-line tool and a Nautilus extension that
+ integrates the Dropbox web service with your GNOME Desktop.
+
+Package: emerald
+Version: 0.9.5-1
+Architecture: amd64
+Maintainer: root@MIKE-DESKTOP
+Installed-Size: 3348
+Provides: emerald
+Filename: ./pool/deb/emerald/emerald_0.9.5-1_amd64.deb
+Size: 829106
+MD5sum: 68ca464b5d9beda10aef38247f8b3fbf
+SHA1: 547f7ae61cb442ee212daad9901bc76bef0de4e2
+SHA256: 23e9800a140e4ae07c6df6bb4ef236b81a4df526521ac992990243983587fb8b
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: evemuserver
+Version: 1:20130110-git-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 196680
+Provides: evemuserver
+Filename: ./pool/deb/evemu_server/evemuserver_20130110-git-1_amd64.deb
+Size: 119166690
+MD5sum: f2ace820c216cca975b60a8d9b0781e0
+SHA1: 2679d3770a8ad2ba7919f6889a1474b712614ce5
+SHA256: bd5947e0989512902d8e21a6a44b89eb01432fe1e5cdd4dcc363186d077aa0b1
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: extlinux
+Source: syslinux
+Version: 3:6.03~pre1+dfsg-4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 316
+Depends: libc6 (>= 2.8)
+Recommends: syslinux-common, os-prober
+Breaks: syslinux-common (<< 3:6.03~pre1+dfsg-4)
+Replaces: syslinux-common
+Filename: ./pool/deb/syslinux/extlinux_6.03~pre1+dfsg-4_amd64.deb
+Size: 126366
+MD5sum: 61f3640dc25bacf9b06be0a9ed9e2a11
+SHA1: 4a1e816c5b625fc5869bccd1f8e38a7a1463450f
+SHA256: d55e1ec34bb07f10417da3e71a3a68488cec853d7ddb89bac88279325f778b29
+Section: admin
+Priority: optional
+Homepage: http://www.syslinux.org/
+Description: collection of bootloaders (Linux ext2/ext3/ext4, btrfs, and xfs bootloader)
+ syslinux is a suite of bootloaders, currently supporting DOS FAT and NTFS
+ filesystems (SYSLINUX), Linux ext2/ext3/ext4, btrfs, and xfs filesystems
+ (EXTLINUX), PXE network boots (PXELINUX), or ISO 9660 CD-ROMs (ISOLINUX).
+ .
+ This package contains the bootloader for Linux ext2/ext3/ext4, btrfs, and xfs
+ filesystems (EXTLINUX).
+Original-Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+
+Package: fdk-aac
+Version: 1:3.3.20140208.9a3234055adb1e18f80571925779503c8dec5251~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 12096
+Conflicts: fdk-aac-doc, fdk-aac-dev, fdk-aac, libfdk-aac0, libfdk-aac-dev
+Provides: fdk-aac-doc, fdk-aac-dev, fdk-aac, libfdk-aac0, libfdk-aac-dev
+Filename: ./pool/deb/fdk-aac/fdk-aac_3.3.20140208.9a3234055adb1e18f80571925779503c8dec5251~raring1-1_amd64.deb
+Size: 2239744
+MD5sum: e1e3e56e0b0957af7455b3ba096a4df1
+SHA1: 236e46131a7b8bb8f7340e8251e72dd9b7593646
+SHA256: e8be6c4ca7b1497653202cdda27b4b442ae13631f64ed401c9ac67eeebdf37f0
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: ffmpeg
+Version: 9:11~git20141408.N-65616-g7cdef77~trusty1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 37772
+Depends: libc6,libshine2,libgsm1,libmp3lame0,libopenjpeg2,libvdpau1,libxv1,libxfixes3,libjack-jackd2-0,libasound2,libsdl1.2debian,libgl1-mesa-dev,libopenal1,libraw1394-11,libavc1394-0,libiec61883-0,libass4,libmodplug1,libflite1,libgme0,libzvbi0,x265,libopencore-amrnb0,libopencore-amrwb0,fdk-aac,faac,libcrystalhd3,libbluray1,libschroedinger-1.0-0,libspeex1,libtheora0,libva1,libvpx1,libxvidcore4,zlib1g,sndio,libx264,ocl-icd-libopencl1,libaacplus2,libopus0,libtwolame0,libilbc
+Conflicts: libavcodec-dev,libav-tools,libavutil-dev,libavcodec-dev,libavutil-dev,libavformat-dev,libavdevice-dev,libavfilter-dev,libswscale-dev,libpostproc-dev,ffmpeg-libs
+Replaces: libavcodec-dev,libav-tools,libavcodec-dev,libavutil-dev,libavutil-dev,libavformat-dev,libavdevice-dev,libavfilter-dev,libswscale-dev,libpostproc-dev,ffmpeg-libs
+Provides: ffmpeg,libavcodec-dev,libavcodec-dev,libavutil-dev,libavutil-dev,libavformat-dev,libavdevice-dev,libavfilter-dev,libswscale-dev,libpostproc-dev,ffmpeg-libs
+Filename: ./pool/deb/ffmpeg/ffmpeg_11~git20141408.N-65616-g7cdef77~trusty1-1_amd64.deb
+Size: 7709382
+MD5sum: 1c0597efef712783ab2b3d460528b9e2
+SHA1: 43d8cd9c0bedaac560539e48504725cc1120997e
+SHA256: c5869e35a668c4a15d0aa1702b1c62b501c30a51987185f60345c71347664277
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: ffmpeg-intel
+Version: 9:11~git20141408.N-65616-g7cdef77~trusty1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 37356
+Depends: libc6,libshine2-intel,libgsm1,libmp3lame0,libopenjpeg2,libvdpau1,libxv1,libxfixes3,libjack-jackd2-0,libasound2,libsdl1.2debian,libopenal1,libraw1394-11,libavc1394-0,libiec61883-0,libflite1,libass4,libmodplug1,libbluray1,x265,libopencore-amrnb0,libopencore-amrwb0,fdk-aac,faac,libcrystalhd3,libzvbi0,libgme0,libgl1-mesa-dev,libschroedinger-1.0-0,libspeex1,libtheora0,libva1,libvpx1,libxvidcore4,zlib1g,sndio,libx264-intel,ocl-icd-libopencl1,libaacplus2,libopus0,libtwolame0,libilbc
+Conflicts: libavcodec-dev,ffmpeg,libav-tools,libavutil-dev,libavcodec-dev,libavutil-dev,libavformat-dev,libavdevice-dev,libavfilter-dev,libswscale-dev,libpostproc-dev,ffmpeg-libs
+Replaces: libavcodec-dev,libav-tools,libavcodec-dev,libavutil-dev,libavutil-dev,libavformat-dev,libavdevice-dev,libavfilter-dev,libswscale-dev,libpostproc-dev,ffmpeg,ffmpeg-libs
+Provides: ffmpeg,libavcodec-dev,libavcodec-dev,libavutil-dev,libavutil-dev,libavformat-dev,libavdevice-dev,libavfilter-dev,libswscale-dev,libpostproc-dev,ffmpeg-libs
+Filename: ./pool/deb/ffmpeg/ffmpeg-intel_11~git20141408.N-65616-g7cdef77~trusty1-1_amd64.deb
+Size: 7555380
+MD5sum: b584211a00a290c09c34c076d4c52051
+SHA1: 73f422901fa4cea05c77df4771e57bae906ac72e
+SHA256: cc003e80fc0dce788d1786564b4ed44e20a520f17d513826ad8f1fcba001d856
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: gir1.2-gtk-3.0
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 914
+Depends: libgtk-3-common, gir1.2-atk-1.0, gir1.2-freedesktop, gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-pango-1.0, libgtk-3-0 (>= 3.8.2)
+Filename: ./pool/deb/misc/gir1.2-gtk-3.0_3.8.2-3ubuntu6_amd64.deb
+Size: 235950
+MD5sum: 1453c1e542f0076267d24c90cdbaea9f
+SHA1: 3e586ff4152486572ee4d10cc9d7577074e59022
+SHA256: ece9ebb397ad65245b3266c57de231285b1bb20d16ea5a1df14c736f4873f2a4
+Section: introspection
+Priority: optional
+Homepage: http://www.gtk.org/
+Description: GTK+ graphical user interface library -- gir bindings
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: glsl-optimizer
+Source: glsl-optimizer
+Version: 1:0.1a-5db7b8977a-20130609
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Provides: glsl-optimizer
+Filename: ./pool/deb/misc/glsl-optimiser.deb
+Size: 520432
+MD5sum: 35fcffc2f5f1cd1acbe07f154f5c3201
+SHA1: 3c3bf5a0e27b333e0f795c7c39b0d9194b4f3fef
+SHA256: f6d5c4ff8dc0415771e9ef5738ad0daaf21cad0a30da1635afdacf41149a7fe8
+Section: libs
+Priority: extra
+Description: "GLSL optimizer - A C++ library that takes GLSL shaders, does some GPU-independent optimizations on them and outputs GLSL back. Optimizations are function inlining, dead code removal, copy propagation, constant folding, constant propagation, arithmetic optimizations and so on. Apparently quite a few mobile platforms are pretty bad at optimizing GLSL shaders; and unfortunately they also lack offline shader compilers. So using a GLSL optimizer offline before can make the shader run much faster on a platform like that. See performance numbers in this blog post. Almost all actual code is Mesa 3D's GLSL compiler; all this library does is spits out optimized GLSL back, and adds GLES type precision handling to the optimizer. This GLSL optimizer is made for Unity's purposes and is built-in in Unity 3 and later. GLSL Optimizer is licensed according to the terms of the MIT license."
+Summary: GLSL optimizer based on Mesa's GLSL compiler.
+
+Package: gtk-3-examples
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1910
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.10.0), libgdk-pixbuf2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (= 3.8.2-3ubuntu6), libpango-1.0-0 (>= 1.32.4), libpangocairo-1.0-0 (>= 1.32.4), dconf-gsettings-backend | gsettings-backend
+Breaks: libgtk-3-common (<< 3.5.4)
+Replaces: libgtk-3-common (<< 3.5.4)
+Filename: ./pool/deb/misc/gtk-3-examples_3.8.2-3ubuntu6_amd64.deb
+Size: 335878
+MD5sum: 17a773a4b7f687a1751e0c0da9430c3b
+SHA1: ed5b7384eec5f75e016b7e4c21bc0f03b606b027
+SHA256: 45e423e3d0bc7787a594c21fe50c7c4788aade2be1ce284352525077c5a04761
+Section: x11
+Priority: extra
+Homepage: http://www.gtk.org/
+Description: example files for GTK+ 3
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the example files and a demonstration program
+ for GTK+3.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: isolinux
+Source: syslinux
+Version: 3:6.03~pre1+dfsg-4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 188
+Depends: libc6 (>= 2.4), libuuid1 (>= 2.16)
+Recommends: syslinux-common
+Suggests: xorriso
+Breaks: syslinux (<< 3:6.00~pre4+dfsg-5~), syslinux-common (<< 3:6.03~pre1+dfsg-4)
+Replaces: syslinux-common
+Filename: ./pool/deb/syslinux/isolinux_6.03~pre1+dfsg-4_amd64.deb
+Size: 55716
+MD5sum: 55d622db7c08569bc6f6a3b55c046b39
+SHA1: c92e71b6a40683d7575d9dce03a1d3224f8096b2
+SHA256: 85cdeea30d1865515868f9aaa08ac5428be1118c8a192a2f2e6de012bbcce688
+Section: admin
+Priority: optional
+Homepage: http://www.syslinux.org/
+Description: collection of bootloaders (ISO 9960 bootloader)
+ syslinux is a suite of bootloaders, currently supporting DOS FAT and NTFS
+ filesystems (SYSLINUX), Linux ext2/ext3/ext4, btrfs, and xfs filesystems
+ (EXTLINUX), PXE network boots (PXELINUX), or ISO 9660 CD-ROMs (ISOLINUX).
+ .
+ This package contains the bootloader for ISO 9960 CD-ROMs (ISOLINUX).
+Original-Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+
+Package: libaacplus-dev
+Source: libaacplus
+Version: 2.0.2-dmo1
+Architecture: amd64
+Bugs: mailto:marillat@debian.org
+Maintainer: Christian Marillat <marillat@debian.org>
+Installed-Size: 371
+Depends: libaacplus2 (= 2.0.2-dmo1), pkg-config
+Filename: ./pool/deb/aacplus/libaacplus-dev_2.0.2-dmo1_amd64.deb
+Size: 125802
+MD5sum: 0396b56302826b0781a08fed0e8a22ee
+SHA1: 84285af4dd2dceb8929be8c42ed779855d5b1da2
+SHA256: 896448109ea99808689f02688a78b8cbc8e894d37e87f665c395c0326439e729
+Section: libdevel
+Priority: extra
+Multi-Arch: same
+Homepage: http://tipok.org.ua/ru/node/17
+Description: AAC+ encoding library - development files
+ Libaacplus is a shared version of the 3GPP reference implementation of High
+ Efficiency Advanced Audio Codec (HE-AAC) Codec, also known as AAC+.
+ .
+ This package contains the files needed to compile and statically link
+ against Libaacplus.
+
+Package: libaacplus2
+Source: libaacplus
+Version: 2.0.2-dmo1
+Architecture: amd64
+Bugs: mailto:marillat@debian.org
+Maintainer: Christian Marillat <marillat@debian.org>
+Installed-Size: 228
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.4)
+Filename: ./pool/deb/aacplus/libaacplus2_2.0.2-dmo1_amd64.deb
+Size: 115212
+MD5sum: 17c6c569d9cacb5b844060ee408150d8
+SHA1: d5d44a927cff28818a37b29142d0c05ff71e13b2
+SHA256: be3051e5e124e3f9b8fca9fa64de72e97be3c7f0456464d08d8c80b841e7e096
+Section: libs
+Priority: extra
+Multi-Arch: same
+Homepage: http://tipok.org.ua/ru/node/17
+Description: AAC+ encoding library - runtime files
+ Libaacplus is a shared version of the 3GPP reference implementation of High
+ Efficiency Advanced Audio Codec (HE-AAC) Codec, also known as AAC+.
+ .
+ This package contains the files needed to run a program compiled using
+ Libaacplus.
+
+Package: libao-common
+Source: libao
+Version: 1.1.0-2ubuntu1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 46
+Conflicts: libao2
+Breaks: libao4 (<< 1.0.0-2)
+Replaces: libao4 (<< 1.0.0-2)
+Filename: ./pool/deb/libao/libao-common_1.1.0-2ubuntu1_all.deb
+Size: 9606
+MD5sum: 8a5d293450c95259b3f95557ea98de6c
+SHA1: 4395781eabb5a47e12af37c0e4b5d22d7f0818e2
+SHA256: 4b63bc0feb95a50aba1ad138d741b24e4fb327d4c367c9ad7000ba8f0069738d
+Section: libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.xiph.org/ao/
+Description: Cross Platform Audio Output Library (Common files)
+ Libao is a cross-platform audio library that allows programs to output audio
+ using a simple API on a wide variety of platforms. It currently supports:
+ .
+  * Null output (handy for testing without a sound device)
+  * WAV files
+  * AU files
+  * OSS (Open Sound System, used on Linux and FreeBSD)
+  * ALSA (Advanced Linux Sound Architecture)
+  * PulseAudio (next generation GNOME sound server)
+  * esd (EsounD or Enlightened Sound Daemon)
+  * and several others.
+ .
+ This package contains config files and man pages for libao.
+Original-Maintainer: Ron Lee <ron@debian.org>
+
+Package: libao-dbg
+Source: libao
+Version: 1.1.0-2ubuntu1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 179
+Depends: libao4 (= 1.1.0-2ubuntu1)
+Filename: ./pool/deb/libao/libao-dbg_1.1.0-2ubuntu1_amd64.deb
+Size: 88782
+MD5sum: a594a79b68eca982ff1c0b811f10737f
+SHA1: e75e44fc78c011cec926cea00ad07db8365c465d
+SHA256: b1cb0b0d31b81249f834ceef754ee89a5fb884804c9a2078980e66760f4bf3c0
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.xiph.org/ao/
+Description: Cross Platform Audio Output Library Debug Symbols
+ Libao is a cross-platform audio library that allows programs to output audio
+ using a simple API on a wide variety of platforms. It currently supports:
+ .
+  * Null output (handy for testing without a sound device)
+  * WAV files
+  * AU files
+  * OSS (Open Sound System, used on Linux and FreeBSD)
+  * ALSA (Advanced Linux Sound Architecture)
+  * PulseAudio (next generation GNOME sound server)
+  * esd (EsounD or Enlightened Sound Daemon)
+  * and several others.
+ .
+ This package contains debugging symbols useful for tracing bugs in the
+ libao package.
+Original-Maintainer: Ron Lee <ron@debian.org>
+
+Package: libao-dev
+Source: libao
+Version: 1.1.0-2ubuntu1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 279
+Depends: libao4 (= 1.1.0-2ubuntu1), libc6-dev
+Filename: ./pool/deb/libao/libao-dev_1.1.0-2ubuntu1_amd64.deb
+Size: 62768
+MD5sum: 3d3179921ef4f8c71a854a1e48700e48
+SHA1: 283af6c2625b5831d96fdb9471f5aefc3fe60846
+SHA256: 4de00837d3a1aec446aa7dd20f1b7ad03e4d06529686ba4ec2a0da42601ca97e
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.xiph.org/ao/
+Description: Cross Platform Audio Output Library Development
+ Libao is a cross-platform audio library that allows programs to output audio
+ using a simple API on a wide variety of platforms. It currently supports:
+ .
+  * Null output (handy for testing without a sound device)
+  * WAV files
+  * AU files
+  * OSS (Open Sound System, used on Linux and FreeBSD)
+  * ALSA (Advanced Linux Sound Architecture)
+  * PulseAudio (next generation GNOME sound server)
+  * esd (EsounD or Enlightened Sound Daemon)
+  * and several others.
+ .
+ This package contains the header files and static libraries required for
+ developing applications that use libao.
+Original-Maintainer: Ron Lee <ron@debian.org>
+
+Package: libao4
+Source: libao
+Version: 1.1.0-2ubuntu1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 151
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), libao-common
+Suggests: libasound2, libaudio2, libesd0 | libesd-alsa0, libpulse0
+Replaces: libao-pulse
+Filename: ./pool/deb/libao/libao4_1.1.0-2ubuntu1_amd64.deb
+Size: 42236
+MD5sum: db714087555b8e80455d808478a8d1dc
+SHA1: 1a5b7a7d238c6a1cad585bdf799c33480891859a
+SHA256: 5433a59d0df5772ec4b60120bf48c5f95cdaf15fd8f93aacd0ebd51d46c0d7be
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.xiph.org/ao/
+Description: Cross Platform Audio Output Library
+ Libao is a cross-platform audio library that allows programs to output audio
+ using a simple API on a wide variety of platforms. It currently supports:
+ .
+  * Null output (handy for testing without a sound device)
+  * WAV files
+  * AU files
+  * OSS (Open Sound System, used on Linux and FreeBSD)
+  * ALSA (Advanced Linux Sound Architecture)
+  * PulseAudio (next generation GNOME sound server)
+  * esd (EsounD or Enlightened Sound Daemon)
+  * and several others.
+Original-Maintainer: Ron Lee <ron@debian.org>
+
+Package: libass4
+Version: 2:1.1.5-20141305.b634305c6740dc056bbe994d6250abd2572e8c31~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 1632
+Depends: libc6
+Conflicts: libass, libass4, libass-doc, libass-dev, libass-bin
+Replaces: libass,libass4,libass-doc,libass-dev,libass-bin
+Provides: libass,libass4,libass-doc,libass-dev,libass-bin
+Filename: ./pool/deb/libass/libass4_1.1.5-20141305.b634305c6740dc056bbe994d6250abd2572e8c31~raring1-1_amd64.deb
+Size: 298284
+MD5sum: 4f226d38452830fa3f2cecc6c98533da
+SHA1: 67dfa3698cec9504f018c58b0bac369bdba8d792
+SHA256: 7982f174c43ccdf0ac1820d4701cba4ebb0c5ae9221a68a0e6ea671e72aec0fa
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libavcodec54
+Source: ffmpeg
+Version: 9:9.9-dummy
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Depends: ffmpeg
+Provides: libavcodec54
+Filename: ./pool/deb/ffmpeg-support/libavcodec54_9.9-dummy_amd64.deb
+Size: 646
+MD5sum: 07643489e76eeb20a95a3b4ed170ebfe
+SHA1: 8267620b10b0a66048fef24975e0c6b0fced862c
+SHA256: eb9ae748261ce30fff7e40bfa58931cdb6b2920a07baa11ebbecd00b68e8b317
+Section: media
+Priority: extra
+Description: Just a dummy file, to fix packaging issues."
+
+Package: libavdevice54
+Source: ffmpeg
+Version: 9:9.9-dummy
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Depends: ffmpeg
+Provides: libavdevice54
+Filename: ./pool/deb/ffmpeg-support/libavdevice54_9.9-dummy_amd64.deb
+Size: 648
+MD5sum: eaa2a89f5793cd892a9ff984cd4ebfc7
+SHA1: 7d3e6f07dabed5c95d6ff6c1cc25afbc834a6d5f
+SHA256: 88f50f74ee759afa0f78505368e5bf27ba1ec2dceb1845e789d66437c8baa1cc
+Section: media
+Priority: extra
+Description: Just a dummy file, to fix packaging issues."
+
+Package: libavfilter3
+Source: ffmpeg
+Version: 9:9.9-dummy
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Depends: ffmpeg
+Provides: libavfilter3
+Filename: ./pool/deb/ffmpeg-support/libavfilter3_9.9-dummy_amd64.deb
+Size: 644
+MD5sum: a85af942052d2be3f3ff3cfff3905fe6
+SHA1: 0c585c1cda2d991a682aa8e3202dd0d516ab5d47
+SHA256: 0877ad9f3381f30561bb749a6616d093d20fb163b67617ac69e9cee57931069b
+Section: media
+Priority: extra
+Description: Just a dummy file, to fix packaging issues."
+
+Package: libavformat54
+Source: ffmpeg
+Version: 9:9.9-dummy
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Depends: ffmpeg
+Provides: libavformat54
+Filename: ./pool/deb/ffmpeg-support/libavformat54_9.9-dummy_amd64.deb
+Size: 646
+MD5sum: b20fe83bf50f57910515e226591d6b57
+SHA1: 2ca673220a1fa6c3c1ccfa0b07ac309e92fa1390
+SHA256: 63dc7d32ebda4ade563f1a7e688c250eca70b220a339da73495bcdc4f1a669f7
+Section: media
+Priority: extra
+Description: Just a dummy file, to fix packaging issues."
+
+Package: libavutil52
+Source: ffmpeg
+Version: 9:9.9-dummy
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Depends: ffmpeg
+Provides: libavutil52
+Filename: ./pool/deb/ffmpeg-support/libavutil52_9.9-dummy_amd64.deb
+Size: 644
+MD5sum: d7bd4a7c2c7b5acbbeeb86cfbfea5135
+SHA1: 8e8ca4052376fb0942ececed856efd81f7dcc4f9
+SHA256: 886e11449768d5d67b2a51a13888539c69492de62de1e46500a9f490a0f3cfbf
+Section: media
+Priority: extra
+Description: Just a dummy file, to fix packaging issues."
+
+Package: libbluray1
+Version: 1:0.6~git20141408.7a28187c1e4a8b26207def0bf08a74671e783003~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 4588
+Depends: libc6
+Conflicts: libbluray1,libbluray1-dev,libbluray1-dbg,libbluray1-doc,libbluray
+Replaces: libbluray1-dev,libbluray1-dbg,libbluray1-doc,libbluray,libbluray-dev
+Provides: libbluray1,libbluray1-dev,libbluray1-dbg,libbluray1-doc,libbluray,libbluray-dev
+Filename: ./pool/deb/libbluray/libbluray1_0.6~git20141408.7a28187c1e4a8b26207def0bf08a74671e783003~raring1-1_amd64.deb
+Size: 1166756
+MD5sum: 1766bcae034b2f885efa5c0d41143631
+SHA1: f588a19d7e1190cbbaa2f9bf5a27d110d74105c7
+SHA256: 463b3f4a1a4ea7c645fcf13ffa9950c50b34db07f47f43317f705e7587c04e55
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libbullet-dev
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 1254
+Depends: libbulletcollision2.81 (= 2.81-rev2613+dfsg2-1), libbulletdynamics2.81 (= 2.81-rev2613+dfsg2-1), libbulletsoftbody2.81 (= 2.81-rev2613+dfsg2-1), liblinearmath2.81 (= 2.81-rev2613+dfsg2-1)
+Filename: ./pool/deb/bullet/libbullet-dev_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 201010
+MD5sum: 11f50661f05eb3f42f498e3e6af63616
+SHA1: ea1984358e1f8ada214e4632a8b232008d68d6f6
+SHA256: cee6c87d5daa2d7fd84ab912e17e8415dd63a7cbd71f7c565dd6030db342d83d
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- development files
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+  * Used by many movie and game companies in AAA titles on Playstation 3, XBox
+    360, Nintendo Wii, PC, Android and iPhone.
+  * Modular extendible C++ design with hot-swap of most components.
+  * Discrete and continuous collision detection (CCD).
+  * Swept collision queries.
+  * Ray casting with custom collision filtering.
+  * Generic convex support (using GJK), capsule, cylinder, cone, sphere, box and
+    non-convex triangle meshes.
+  * Support for dynamic deformation of non-convex triangle meshes, by refitting
+    the acceleration structures.
+ .
+ Multiphysics support including:
+ .
+  * Rigid body dynamics including constraint solvers, generic constraints,
+    ragdolls, hinge, ball-socket.
+  * Support for constraint limits and motors.
+  * Soft body support including cloth, rope and deformable.
+  * Bullet is integrated into Blender.
+  * Serialization of physics data in the cross-platform binary bullet file
+    format.
+ .
+ This package contains development files for Bullet.
+
+Package: libbullet-doc
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: all
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 201157
+Filename: ./pool/deb/bullet/libbullet-doc_2.81-rev2613+dfsg2-1_all.deb
+Size: 117253432
+MD5sum: 7f9f684fd98799c9d648b21770b5fd7d
+SHA1: 7d25a5edb98ae91d39aa63005f3c90c732e609db
+SHA256: 063a1345c647e297c905c22dc0bd3d5da96d0bf3f65ffabf0d0fb9a1a5e6f009
+Section: doc
+Priority: optional
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- documentation
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the Bullet API documentation.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libbullet-extras-dev
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 207
+Depends: libbulletfileloader2.81 (= 2.81-rev2613+dfsg2-1), libbulletworldimporter2.81 (= 2.81-rev2613+dfsg2-1), libbulletxmlworldimporter2.81 (= 2.81-rev2613+dfsg2-1), libconvexdecomposition2.81 (= 2.81-rev2613+dfsg2-1), libgimpactutils2.81 (= 2.81-rev2613+dfsg2-1), libhacd2.81 (= 2.81-rev2613+dfsg2-1)
+Filename: ./pool/deb/bullet/libbullet-extras-dev_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 37312
+MD5sum: dfe1a270ec32b21c43a598fccf9185ca
+SHA1: 34208a4a0cb418b8b5ee849acc27fd290c0f5614
+SHA256: e6330a3f899ce009fcc7685bdbfc662a31c04a0d2b01af68b4bbdada91a89dbd
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- extra development
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains extra development files for Bullet.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libbullet2.81-dbg
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 4789
+Depends: libbulletcollision2.81 (= 2.81-rev2613+dfsg2-1), libbulletdynamics2.81 (= 2.81-rev2613+dfsg2-1), libbulletfileloader2.81 (= 2.81-rev2613+dfsg2-1), libbulletsoftbody2.81 (= 2.81-rev2613+dfsg2-1), libbulletworldimporter2.81 (= 2.81-rev2613+dfsg2-1), libbulletxmlworldimporter2.81 (= 2.81-rev2613+dfsg2-1), libconvexdecomposition2.81 (= 2.81-rev2613+dfsg2-1), libgimpactutils2.81 (= 2.81-rev2613+dfsg2-1), libhacd2.81 (= 2.81-rev2613+dfsg2-1), liblinearmath2.81 (= 2.81-rev2613+dfsg2-1)
+Filename: ./pool/deb/bullet/libbullet2.81-dbg_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 4500650
+MD5sum: 8064c74e1168065e164836b5253b85f2
+SHA1: da308d3b536ff0cda05198b50077c0cb0a94383a
+SHA256: 87bc3dab0e2f2dbb70d1ac4218fd2d6fff3e53c13e9838911700acc2e0545e65
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- debugging symbols
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains debugging symbols for Bullet.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libbulletcollision2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 933
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), liblinearmath2.81, libstdc++6 (>= 4.1.1)
+Filename: ./pool/deb/bullet/libbulletcollision2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 289552
+MD5sum: d423640aafb045d41ab7d2f2316c54cc
+SHA1: 3821bd408e141288d032b074ff965fe9930d1935
+SHA256: 86724885745e7c1b7d2b5f6206606f666a4836fbad4426a9cbca7ec06f798695
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- collision
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the BulletCollision shared library.
+ .
+ It features discrete and continuous collision detection including ray and
+ convex sweep test. Collision shapes include concave and convex meshes and all
+ basic primitives.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libbulletdynamics2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 374
+Pre-Depends: multiarch-support
+Depends: libbulletcollision2.81, libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), liblinearmath2.81, libstdc++6 (>= 4.1.1)
+Filename: ./pool/deb/bullet/libbulletdynamics2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 127962
+MD5sum: 8470bfbb43ef3069f895838a67a0df44
+SHA1: 00d1e404168ff4e59dd3d5c7b10a57945f7e181d
+SHA256: aa83a937f30de81d284eb34f3ad739d965749d6d72bea4d00d72bdde538c2754
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- dynamics
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the BulletDynamics shared library.
+ .
+ It features fast and stable rigid body dynamics constraint solver, vehicle
+ dynamics, character controller and slider, hinge, generic 6DOF and cone twist
+ constraint for ragdolls.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libbulletfileloader2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 73
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), liblinearmath2.81, libstdc++6 (>= 4.1.1)
+Filename: ./pool/deb/bullet/libbulletfileloader2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 29190
+MD5sum: fa63b0e92b4254943e913d097a04f49d
+SHA1: 2e6af84d545148a6c1cf6eb87b62e71312df5ac7
+SHA256: 96c2f737b389f3f70a257d4224dd67ed4d9850337cd309ca8cc201871a3229f8
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- file loader
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the BulletFileLoader shared library.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libbulletsoftbody2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 290
+Pre-Depends: multiarch-support
+Depends: libbulletcollision2.81, libbulletdynamics2.81, libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), liblinearmath2.81, libstdc++6 (>= 4.1.1)
+Filename: ./pool/deb/bullet/libbulletsoftbody2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 101978
+MD5sum: 12832b77d68beb0a48da847c35cb55e8
+SHA1: 3b35725c331907b0685b2513a3e2ecd51ccfa086
+SHA256: 98bbc359959aa5a8f7b98b482cb9e99414fba53e10de48046e4b74e50c8d261c
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- soft body
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the BulletSoftbody shared library.
+ .
+ It features Soft Body dynamics for cloth, rope and deformable volumes with
+ two-way interaction with rigid bodies, including constraint support.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libbulletworldimporter2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 114
+Pre-Depends: multiarch-support
+Depends: libbulletcollision2.81, libbulletdynamics2.81, libbulletfileloader2.81, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), liblinearmath2.81, libstdc++6 (>= 4.1.1)
+Filename: ./pool/deb/bullet/libbulletworldimporter2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 35468
+MD5sum: 68b55cd4e94d46bc7ffa3959917cd51d
+SHA1: 65c0ba74970db38d145cfd3d5a467142ac410e76
+SHA256: 3858b7b5671b28fdb57d4dac4140c52e9ee946d09df2044b95aae0811a142371
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- world importer
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the BulletWorldImporter shared library which can be
+ used by Blender and other Software to export or import the Bullet physics
+ file format.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libbulletxmlworldimporter2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 70
+Pre-Depends: multiarch-support
+Depends: libbulletdynamics2.81, libbulletworldimporter2.81, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), liblinearmath2.81, libstdc++6 (>= 4.1.1), libtinyxml2.6.2
+Filename: ./pool/deb/bullet/libbulletxmlworldimporter2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 24170
+MD5sum: 97cff301ae11fd868b660bfbdbd327ae
+SHA1: 0d2693bfc617b476f0da4be5e7e9c2870190b67d
+SHA256: 8e5723c17cd0c2215d13fc057b856f8dd73ef67fb19354ece8f21665feacdb2a
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- xml world importer
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the BulletXmlWorldImporter shared library which can be
+ used by Blender and other Software to export or import the Bullet physics file
+ format.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libconvexdecomposition2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 138
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), liblinearmath2.81, libstdc++6 (>= 4.1.1)
+Filename: ./pool/deb/bullet/libconvexdecomposition2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 54508
+MD5sum: d55326bac96ec05b06661151b9d46415
+SHA1: 02bd9e73eb46cd135e77f7af216093882597014a
+SHA256: 7f2f7f57d63cfed7a21388077b30816286e92c40f814ddc69e019ca97887d39f
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- convex decomposition
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the ConvexDecomposition shared library. Convex
+ decomposition can be used to decompose a concave mesh into several convex
+ parts and then combine them into a new composite object.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libcrystalhd3
+Source: crystalhd
+Version: 1:0.0~git20110715.fdd2f19-11
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 155
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Suggests: firmware-crystalhd
+Filename: ./pool/deb/libcrystalhd/libcrystalhd3_0.0~git20110715.fdd2f19-11_amd64.deb
+Size: 45982
+MD5sum: a74d7660cdcd787dd740703c00519b08
+SHA1: 0aafed884665292829fe4dda72ab1289d258b59b
+SHA256: 178c1ab94fe93ccc7713154b29c634875281c7a82211f5ef888d9ef32a480129
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.broadcom.com/support/crystal_hd/
+Description: Crystal HD Video Decoder (shared library)
+ Crystal HD Solution is a product offered by Broadcom. It is used to enable
+ flawless playback of 1080p high definition video across a wide range of
+ systems.
+ .
+ This package contains the shared library.
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+
+Package: libdv
+Version: 1.0.0-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 1980
+Conflicts: libdv4, libdv-doc, libdv4-dev, libdv-bin
+Replaces: libdv4,libdv4-doc,libdv4-dev,libdv-bin
+Provides: libdv
+Filename: ./pool/deb/libdv/libdv_1.0.0-1_amd64.deb
+Size: 572330
+MD5sum: e5e4f077d783ac0ad0e0cf4e724dee69
+SHA1: 30c835be71f3b8a319aef17ad10e321f8e58ce33
+SHA256: d2b659942aca95077ae4e856776b223a27200f504f5d2a79536c11cd33dab304
+Section: Libraries/Multimedia
+Priority: extra
+Description: libdv - DV software codec
+ Package created with checkinstall 1.6.2
+
+Package: libfaad2
+Source: faad2
+Version: 2.7-8
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 320
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14)
+Conflicts: libfaad2-0
+Replaces: libfaad2-0
+Filename: ./pool/deb/faad2/libfaad2_2.7-8_amd64.deb
+Size: 176366
+MD5sum: 869a7f8559db55a77fa236b385a4f879
+SHA1: 9fe99892052b0321b63af2231eb191e2ee8e38c8
+SHA256: 75e4a15d1b6ed579c88a78bbbb741d3b29c00f414970b677519dd0b0f30ee742
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.audiocoding.com/
+Description: freeware Advanced Audio Decoder - runtime files
+ FAAD2 is the fastest ISO AAC audio decoder available. FAAD2 correctly
+ decodes all MPEG-4 and MPEG-2 MAIN, LOW, LTP, LD and ER object type AAC
+ files.
+ .
+ This package contains the shared library.
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+
+Package: libflite1
+Source: flite
+Version: 1.4-release-8
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 24164
+Pre-Depends: multiarch-support
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.14)
+Suggests: alsa-base
+Filename: ./pool/deb/libflite1/libflite1_1.4-release-8_amd64.deb
+Size: 13010856
+MD5sum: efbfe21202e38617438d6f68278fb9af
+SHA1: bf19159ca2aae126676931297f5c3e413ca5d7c1
+SHA256: 3b8bc0636538d3a64a00ed07200fa3d8cf0c3ec771813514b29b4e9c11ae412e
+Section: libs
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.speech.cs.cmu.edu/flite
+Description: Small run-time speech synthesis engine - shared libraries
+ Flite is a small fast run-time speech synthesis engine.  It is the
+ latest addition to the suite of free software synthesis tools
+ including University of Edinburgh's Festival Speech Synthesis System
+ and Carnegie Mellon University's FestVox project, tools, scripts and
+ documentation for building synthetic voices.  However, flite itself
+ does not require either of these systems to run.
+ .
+ It currently only supports the English language.
+ .
+ This package contains the shared library objects of Festival Lite
+Original-Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+
+Package: libgail-3-0
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 165
+Pre-Depends: multiarch-support
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.2.5), libglib2.0-0 (>= 2.35.3), libgtk-3-0 (= 3.8.2-3ubuntu6), libpango-1.0-0 (>= 1.32.4), at-spi2-core
+Filename: ./pool/deb/misc/libgail-3-0_3.8.2-3ubuntu6_amd64.deb
+Size: 86688
+MD5sum: a92b13e7831afa2a17e1d9a1cd1b2c34
+SHA1: 854132ef8c8a3fc16e726ff852a560ef58c7a703
+SHA256: 94fe4e50ab536082fbb5a7990af6778f0d3d2cb9af6964b3ec07251c640ef2b1
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.gtk.org/
+Description: GNOME Accessibility Implementation Library -- shared libraries
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the shared library.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libgail-3-0-dbg
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 220
+Depends: libgail-3-0 (= 3.8.2-3ubuntu6)
+Recommends: libgtk-3-0-dbg
+Filename: ./pool/deb/misc/libgail-3-0-dbg_3.8.2-3ubuntu6_amd64.deb
+Size: 98062
+MD5sum: 0b33304857eb80161d4b9d4da28d4fe5
+SHA1: 304d8a812838389ea0aa8b59a48e4edb671f94e1
+SHA256: 0fab7ba67c9ba56b3d3026d42669f8e5e83356b48dd28aeeecf6dd69dfe14dff
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.gtk.org/
+Description: Gail libraries and debugging symbols
+ Gail is the "GNOME Accessibility Implementation Library".
+ .
+ This package contains detached debugging symbols.
+ .
+ Most people will not need this package.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libgail-3-dev
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 157
+Depends: libgail-3-0 (= 3.8.2-3ubuntu6), libgtk-3-dev (= 3.8.2-3ubuntu6), pkg-config (>= 0.26-1), libatk1.0-dev (>= 2.2.0)
+Suggests: libgail-3-doc
+Filename: ./pool/deb/misc/libgail-3-dev_3.8.2-3ubuntu6_amd64.deb
+Size: 78870
+MD5sum: cdb798aa65cd08ac19c585bac2a848f7
+SHA1: aa3c69ffeb3387091747b4333feb5bb5361303b4
+SHA256: 898bddff134625c9be959e98c89297a23819a58a8964771b44166da1513f6ce9
+Section: libdevel
+Priority: optional
+Homepage: http://www.gtk.org/
+Description: GNOME Accessibility Implementation Library -- development files
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the development files for Gail.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libgail-3-doc
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 209
+Suggests: devhelp
+Filename: ./pool/deb/misc/libgail-3-doc_3.8.2-3ubuntu6_all.deb
+Size: 85486
+MD5sum: e1ca9314483352e716a8f952f38baa99
+SHA1: 1172363e6bd6b41d26bca146dd947644b798c35d
+SHA256: 7c24e745895c28526accb803c636d5821f5a3220f42221f00f72aedef7cec8dc
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.gtk.org/
+Description: documentation files of the Gail library
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the documentation files for Gail.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libgimpactutils2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 49
+Pre-Depends: multiarch-support
+Depends: libbulletcollision2.81, libconvexdecomposition2.81, libgcc1 (>= 1:4.1.1), liblinearmath2.81, libstdc++6 (>= 4.1.1)
+Filename: ./pool/deb/bullet/libgimpactutils2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 17210
+MD5sum: 304f6762eabbcd28b354e3ea24298e17
+SHA1: 4d6f3d9476cd9ea81c32d7124c75ee7fadfb7739
+SHA256: 9b21fc185ff75955eccb5c29c03a263b9e3707c274136396460b088c6a605ce9
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- GIMPACT
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the GIMPACT shared library. GIMPACT is a software
+ library with tools for geometry processing and collision detection, focused on
+ solving most common problems on Virtual Reality development.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libgtk-3-0
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 6238
+Pre-Depends: multiarch-support
+Depends: libgtk-3-common (>= 3.8.2), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.2.0), libc6 (>= 2.14), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.10.0), libcolord1 (>= 0.1.10), libcups2 (>= 1.6.2), libfontconfig1 (>= 2.9.0), libgdk-pixbuf2.0-0 (>= 2.27.1), libglib2.0-0 (>= 2.37.3), libpango-1.0-0 (>= 1.32.4), libpangocairo-1.0-0 (>= 1.32.4), libpangoft2-1.0-0 (>= 1.32.4), libwayland-client0 (>= 1.0.2), libwayland-cursor0 (>= 1.0.2), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxkbcommon0 (>= 0.2.0), libxrandr2 (>= 2:1.2.99.3), shared-mime-info
+Recommends: hicolor-icon-theme, libgtk-3-bin
+Suggests: librsvg2-common, gvfs
+Breaks: gnome-themes-standard (<< 3.6), gtk3-engines-unico (<< 1.0.2-0ubuntu2), libvte-2.90-9 (<< 1:0.32), libwebkitgtk-3.0-0 (<< 1.8.0), murrine-themes (<= 0.98.2)
+Provides: gtk3-binver-3.0.0
+Filename: ./pool/deb/misc/libgtk-3-0_3.8.2-3ubuntu6_amd64.deb
+Size: 1913808
+MD5sum: 54a6cfc7db7d4399c1707aaf70a4e05f
+SHA1: 2cc0514998cad5018ce276c743555c8ecb42241a
+SHA256: e173d7583a2ccda4dbd35c637dbb8aea012c285a201fe91e21b995f0aad45de3
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.gtk.org/
+Description: GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the shared libraries.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libgtk-3-0-dbg
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 22209
+Depends: libgtk-3-0 (= 3.8.2-3ubuntu6), libgtk-3-common
+Filename: ./pool/deb/misc/libgtk-3-0-dbg_3.8.2-3ubuntu6_amd64.deb
+Size: 5229564
+MD5sum: fde4673cbb48865d3d9fb1721ed1f2ed
+SHA1: b56dcc323ed9db858716cdbdbd46326acad39ed5
+SHA256: 230258f4e95b1223f8796dbac76c68977fc939a8deba31923dd8d047b075b5cf
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.gtk.org/
+Description: GTK+ libraries and debugging symbols
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains detached debugging symbols.
+ .
+ Most people will not need this package.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libgtk-3-bin
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 162
+Depends: libc6 (>= 2.2.5), libglib2.0-0 (>= 2.35.3), libgtk-3-0 (>= 3.8.2-3ubuntu6), libgtk-3-common (>= 3.8.2)
+Filename: ./pool/deb/misc/libgtk-3-bin_3.8.2-3ubuntu6_amd64.deb
+Size: 84492
+MD5sum: f90d7657b18bdd97626d420ca5dd668c
+SHA1: 83a78b976a331ab818f4474d38573ea952213f38
+SHA256: c80edf1951684f618b4da6b813b466e92db8407f4509457f1f1a8e8acd466a1f
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.gtk.org/
+Description: programs for the GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the utilities which are used by the libraries
+ and other packages.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libgtk-3-common
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 21152
+Depends: dconf-gsettings-backend | gsettings-backend
+Recommends: libgtk-3-0
+Breaks: libgtk-3-0 (<< 3.5.4)
+Replaces: libgtk-3-0 (<< 3.5.4)
+Filename: ./pool/deb/misc/libgtk-3-common_3.8.2-3ubuntu6_all.deb
+Size: 2827836
+MD5sum: a168737b6c8f078e3f32ecaa2861e2f1
+SHA1: dd9911e1f350bbe319c14124bf4273befa7162d5
+SHA256: c196a253b64b141109ad5c3024540f731de7e8e2f3a6d7d4dc992115fc5552d7
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.gtk.org/
+Description: common files for the GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the common files which the libraries need.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libgtk-3-dev
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 9065
+Depends: libgtk-3-0 (= 3.8.2-3ubuntu6), gir1.2-gtk-3.0 (= 3.8.2-3ubuntu6), libgtk-3-common, libglib2.0-dev (>= 2.35.3), libgdk-pixbuf2.0-dev (>= 2.27.1), libpango1.0-dev (>= 1.32.4), libatk1.0-dev (>= 2.7.5), libatk-bridge2.0-dev, libcairo2-dev (>= 1.10.0), libwayland-dev (>= 1.0.0), libx11-dev, libxkbcommon-dev, libxext-dev, libxinerama-dev, libxi-dev, libxrandr-dev, libxcursor-dev, libxfixes-dev, libxcomposite-dev, libxdamage-dev, pkg-config (>= 0.26-1)
+Suggests: libgtk-3-doc
+Filename: ./pool/deb/misc/libgtk-3-dev_3.8.2-3ubuntu6_amd64.deb
+Size: 827798
+MD5sum: 0e29c2c6148399774ea7df41dc0e748e
+SHA1: 825603d921bb0898d9b56acdd24a132792757514
+SHA256: 11dcf3e3506a0a6115877019b127d1de064cbc48dd0f047e7c64298434fe90f1
+Section: libdevel
+Priority: optional
+Homepage: http://www.gtk.org/
+Description: development files for the GTK+ library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the header and development files which are
+ needed for building GTK+ applications.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libgtk-3-doc
+Source: gtk+3.0
+Version: 3.8.2-3ubuntu6
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 18749
+Recommends: libglib2.0-doc, libatk1.0-doc, libpango1.0-doc
+Suggests: devhelp
+Filename: ./pool/deb/misc/libgtk-3-doc_3.8.2-3ubuntu6_all.deb
+Size: 2137780
+MD5sum: 227d9670a65e8bc9213bae0930ddf0f6
+SHA1: 8c0cfbf4f86d6ce25e30a7bb1ec0a8e3d79038c1
+SHA256: 5ca0b5d7b53831fd562a7f39c122640fe4f2b2f48441e53ccbb538ba11e6fefc
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.gtk.org/
+Description: documentation for the GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the HTML documentation for the GTK+ library
+ in /usr/share/doc/libgtk-3-doc/ .
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libhacd2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 142
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
+Filename: ./pool/deb/bullet/libhacd2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 52916
+MD5sum: 7f16c546e1d20cc3feffcc32064dda7a
+SHA1: 3b6c0ea720f9f04d7b7e600cb078dfb6506563e1
+SHA256: 57b29f01349017e592f6fdf996093dea924c5399e674291b2a85e84f4a7530cf
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- HACD
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the HACD shared library. HACD stands for Hierarchical
+ Approximate Convex Decomposition and provides a sophisticated algorithm who
+ can, in a CPU efficient way, compute a faithful approximation of the original
+ mesh.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libilbc
+Version: 1:1.0-20130906-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 452
+Provides: libilbc
+Filename: ./pool/deb/libilbc/libilbc_1.0-20130906-1_amd64.deb
+Size: 146632
+MD5sum: 60748234d52ab232fb31967e9cc1cd4a
+SHA1: b862d0c72044418cfc7ab0b63e49c187c0220c42
+SHA256: d13a1a9e8034d8aca1f7f535ab1ca67dc3bad704908d02a9c1f084315d6dbe0c
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libjpeg8-turbo
+Version: 1:20130609.1024~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 3608
+Depends: libc6
+Conflicts: libjpeg8-turbo-doc, libjpeg8-turbo-dev, libjpeg8-turbo
+Provides: libjpeg8-turbo-doc, libjpeg8-turbo-dev, libjpeg8-turbo
+Filename: ./pool/deb/libjpeg8-turbo/libjpeg8-turbo_20130609.1024~raring1-1_amd64.deb
+Size: 1092556
+MD5sum: 888c6eae06f371eb5b4509efeef76456
+SHA1: 0422d622ea0f516889b8d7fe979707d34ad2c9f8
+SHA256: 25386de6ce99f199a5b7fdfc6eaf13c1144209b5754ac06aea8ac60d9db4181b
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: liblinearmath2.81
+Source: bullet
+Version: 2.81-rev2613+dfsg2-1
+Architecture: amd64
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 139
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Filename: ./pool/deb/bullet/liblinearmath2.81_2.81-rev2613+dfsg2-1_amd64.deb
+Size: 53758
+MD5sum: 88038ed408762c9ffca654924b66ff76
+SHA1: c878415d0e9b443c174b393b6ce8621fc5e54f09
+SHA256: d8e282ec9cb80fbeeeea7320d4cde65b341ef11b70f95626fa8dee3882f4c3bd
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.bulletphysics.com/
+Description: professional 3D Game Multiphysics Library -- mathematics
+ Bullet professional 3D Game Multiphysics Library provides state of the art
+ collision detection, soft body and rigid body dynamics.
+ .
+ This package contains the LinearMath shared library which is required by most
+ other Bullet libraries and provides basic data types and memory management.
+ .
+ For more information about Bullet, please refer to the libbullet-dev package.
+
+Package: libmp3lame0
+Source: lame
+Version: 3.99.5+repack1-3ubuntu1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 422
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.15)
+Conflicts: liblame0
+Replaces: liblame0
+Filename: ./pool/deb/libmp3lame0_3.99.5+repack1-3ubuntu1_amd64.deb
+Size: 158148
+MD5sum: 7215d4bba0a91b455298354e32bc2a4a
+SHA1: c3e31b43eaacb32ccad04b21b17d3e8244d6dcca
+SHA256: 9b4cbad96c83fdf18e412222d0f762e480b0221f5d5a81cb6cbfb14fbd8a437c
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://lame.sourceforge.net/
+Description: MP3 encoding library
+ LAME (LAME Ain't an MP3 Encoder) is a research project for learning about and
+ improving MP3 encoding technology. LAME includes an MP3 encoding library, a
+ simple frontend application, and other tools for sound analysis, as well as
+ convenience tools.
+ .
+ This package contains the shared library.
+Original-Maintainer: Debian multimedia packages maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+
+Package: libmygui-dev
+Source: mygui
+Version: 3.2.0-5
+Architecture: amd64
+Maintainer: Bret Curtis <psi29a@gmail.com>
+Installed-Size: 641
+Depends: libmyguiengine3 (= 3.2.0-5), libmygui.ogreplatform0debian0 (= 3.2.0-5), libmygui.openglplatform0debian0 (= 3.2.0-5)
+Suggests: mygui-doc
+Filename: ./pool/deb/mygui/libmygui-dev_3.2.0-5_amd64.deb
+Size: 90480
+MD5sum: 6e3f97feca94f0e91ecbb6884e7b8ca5
+SHA1: 0eca705b599e411211334946e70c23f06afc828c
+SHA256: c2737050197a66efe30f2283afcf117b26edf71c9b50c31a95b3cf62143427c0
+Section: libdevel
+Priority: optional
+Homepage: http://www.ogre3d.org/tikiwiki/MyGUI
+Description: Fast, simple and flexible GUI for OpenMW - development files
+ MyGUI is a GUI library which aims to be fast, flexible and simple GUIs in C++.
+  Features include
+    Layout Editor.
+    Multicolour text.
+    Per pixel cut.
+    Changing alpha support for widgets (also in states configuration).
+    Interface localisation.
+    Fast RTTI for safe casts.
+    Tool tips.
+    Animated cursors and pictures.
+    User xml resources.
+    Truetype fonts and fonts from texture.
+    Widgets controllers (moving, fading and so on).
+    Flexible configuration in xml config file.
+    Subskins with tiling, with direct access to texture.
+    Possibility to store any data in widgets items.
+    Skin themes.
+    Wrappers for fast UI development.
+    Drag'n'drop.
+ .
+ This package contains the headers and static libraries needed to develop
+ programs using MyGUI.
+
+Package: libmygui.ogreplatform0debian0
+Source: mygui
+Version: 3.2.0-5
+Architecture: amd64
+Maintainer: Bret Curtis <psi29a@gmail.com>
+Installed-Size: 162
+Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libmyguiengine3 (>= 3.2.0), libogre-1.9.0, libstdc++6 (>= 4.2.1)
+Filename: ./pool/deb/mygui/libmygui.ogreplatform0debian0_3.2.0-5_amd64.deb
+Size: 42454
+MD5sum: f842f86925bd068bfa7a0168fa365005
+SHA1: e42127bbc099d2bd9f998844de73a5a83e9ea2c9
+SHA256: 8dd4446fdf4fb0413967c106251c181031c8cb7d1af30e166c15b92ae335c427
+Section: libs
+Priority: optional
+Homepage: http://www.ogre3d.org/tikiwiki/MyGUI
+Description: Fast, simple and flexible GUI - Ogre interface
+ MyGUI is a GUI library which aims to be fast, flexible and simple GUIs in C++.
+  Features include
+    Layout Editor.
+    Multicolour text.
+    Per pixel cut.
+    Changing alpha support for widgets (also in states configuration).
+    Interface localisation.
+    Fast RTTI for safe casts.
+    Tool tips.
+    Animated cursors and pictures.
+    User xml resources.
+    Truetype fonts and fonts from texture.
+    Widgets controllers (moving, fading and so on).
+    Flexible configuration in xml config file.
+    Subskins with tiling, with direct access to texture.
+    Possibility to store any data in widgets items.
+    Skin themes.
+    Wrappers for fast UI development.
+    Drag'n'drop.
+ .
+ This package contains the MyGUI interface to the Ogre graphics engine.
+
+Package: libmygui.ogreplatform0debian0-dbg
+Source: mygui
+Version: 3.2.0-5
+Architecture: amd64
+Maintainer: Bret Curtis <psi29a@gmail.com>
+Installed-Size: 1359
+Depends: libmygui.ogreplatform0debian0 (= 3.2.0-5)
+Filename: ./pool/deb/mygui/libmygui.ogreplatform0debian0-dbg_3.2.0-5_amd64.deb
+Size: 1343222
+MD5sum: fc21965137f1d2d5a4086f765ece1cec
+SHA1: d8249077cb911f218da6cdc904033c4523201884
+SHA256: 73baa4b88c628ab03f6ef0907a3cf0457578f0ff8fa36b0ab7e0b02009fc0379
+Section: debug
+Priority: extra
+Homepage: http://www.ogre3d.org/tikiwiki/MyGUI
+Description: Fast, simple and flexible GUI Ogre - debugging symbols
+ MyGUI is a GUI library which aims to be fast, flexible and simple GUIs in C++.
+  Features include
+    Layout Editor.
+    Multicolour text.
+    Per pixel cut.
+    Changing alpha support for widgets (also in states configuration).
+    Interface localisation.
+    Fast RTTI for safe casts.
+    Tool tips.
+    Animated cursors and pictures.
+    User xml resources.
+    Truetype fonts and fonts from texture.
+    Widgets controllers (moving, fading and so on).
+    Flexible configuration in xml config file.
+    Subskins with tiling, with direct access to texture.
+    Possibility to store any data in widgets items.
+    Skin themes.
+    Wrappers for fast UI development.
+    Drag'n'drop.
+ .
+ This package contains the MyGUI interface to the Ogre graphics engine debugging
+ symbols.
+
+Package: libmygui.openglplatform0debian0
+Source: mygui
+Version: 3.2.0-5
+Architecture: amd64
+Maintainer: Bret Curtis <psi29a@gmail.com>
+Installed-Size: 175
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libglew1.10 (>= 1.10.0), libmyguiengine3 (>= 3.2.0), libstdc++6 (>= 4.2.1)
+Filename: ./pool/deb/mygui/libmygui.openglplatform0debian0_3.2.0-5_amd64.deb
+Size: 42108
+MD5sum: f9f031e8406fadedc5f61dca03105a4a
+SHA1: 6788bc84216a538aa51f3f11955e7f19dab92d99
+SHA256: 779565d416248944e3e8f1283010c18555f0d7a9c09876cfaa9b21540866fe96
+Section: libs
+Priority: optional
+Homepage: http://www.ogre3d.org/tikiwiki/MyGUI
+Description: Fast, simple and flexible GUI - OpenGL interface
+ MyGUI is a GUI library which aims to be fast, flexible and simple GUIs in C++.
+  Features include
+    Layout Editor.
+    Multicolour text.
+    Per pixel cut.
+    Changing alpha support for widgets (also in states configuration).
+    Interface localisation.
+    Fast RTTI for safe casts.
+    Tool tips.
+    Animated cursors and pictures.
+    User xml resources.
+    Truetype fonts and fonts from texture.
+    Widgets controllers (moving, fading and so on).
+    Flexible configuration in xml config file.
+    Subskins with tiling, with direct access to texture.
+    Possibility to store any data in widgets items.
+    Skin themes.
+    Wrappers for fast UI development.
+    Drag'n'drop.
+ .
+ This package contains the MyGUI interface for OpenGL.
+
+Package: libmygui.openglplatform0debian0-dbg
+Source: mygui
+Version: 3.2.0-5
+Architecture: amd64
+Maintainer: Bret Curtis <psi29a@gmail.com>
+Installed-Size: 349
+Depends: libmygui.openglplatform0debian0 (= 3.2.0-5)
+Filename: ./pool/deb/mygui/libmygui.openglplatform0debian0-dbg_3.2.0-5_amd64.deb
+Size: 331860
+MD5sum: 12266b77fc0a73c06d385e53b2c169db
+SHA1: 586e9fe036a449a015e0e5df911203f3e638ff1b
+SHA256: 6edd7aecfc1fc567bf32de1190972223ffdc74f07f71c47772dee8cf0722dcea
+Section: debug
+Priority: extra
+Homepage: http://www.ogre3d.org/tikiwiki/MyGUI
+Description: Fast, simple and flexible GUI OpenGL - debugging symbols
+ MyGUI is a GUI library which aims to be fast, flexible and simple GUIs in C++.
+  Features include
+    Layout Editor.
+    Multicolour text.
+    Per pixel cut.
+    Changing alpha support for widgets (also in states configuration).
+    Interface localisation.
+    Fast RTTI for safe casts.
+    Tool tips.
+    Animated cursors and pictures.
+    User xml resources.
+    Truetype fonts and fonts from texture.
+    Widgets controllers (moving, fading and so on).
+    Flexible configuration in xml config file.
+    Subskins with tiling, with direct access to texture.
+    Possibility to store any data in widgets items.
+    Skin themes.
+    Wrappers for fast UI development.
+    Drag'n'drop.
+ .
+ This package contains the MyGUI interface for OpenGL debugging symbols.
+
+Package: libmyguiengine3
+Source: mygui
+Version: 3.2.0-5
+Architecture: amd64
+Maintainer: Bret Curtis <psi29a@gmail.com>
+Installed-Size: 2345
+Depends: libc6 (>= 2.14), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6)
+Filename: ./pool/deb/mygui/libmyguiengine3_3.2.0-5_amd64.deb
+Size: 615544
+MD5sum: 79000a8b1bcdc5ee30653818b9008831
+SHA1: 06f26fc5097916859eaed9b0ae9f2589ac4ee19c
+SHA256: 61993df614cec5a9a4954e38142111225f919f51607fd1270590767bdea22844
+Section: libs
+Priority: optional
+Homepage: http://www.ogre3d.org/tikiwiki/MyGUI
+Description: Fast, simple and flexible GUI - shared library
+ MyGUI is a GUI library which aims to be fast, flexible and simple GUIs in C++.
+  Features include
+    Layout Editor.
+    Multicolour text.
+    Per pixel cut.
+    Changing alpha support for widgets (also in states configuration).
+    Interface localisation.
+    Fast RTTI for safe casts.
+    Tool tips.
+    Animated cursors and pictures.
+    User xml resources.
+    Truetype fonts and fonts from texture.
+    Widgets controllers (moving, fading and so on).
+    Flexible configuration in xml config file.
+    Subskins with tiling, with direct access to texture.
+    Possibility to store any data in widgets items.
+    Skin themes.
+    Wrappers for fast UI development.
+    Drag'n'drop.
+ .
+ This package contains the MyGUI runtime engine.
+
+Package: libmyguiengine3-dbg
+Source: mygui
+Version: 3.2.0-5
+Architecture: amd64
+Maintainer: Bret Curtis <psi29a@gmail.com>
+Installed-Size: 8381
+Depends: libmyguiengine3 (= 3.2.0-5)
+Filename: ./pool/deb/mygui/libmyguiengine3-dbg_3.2.0-5_amd64.deb
+Size: 8162534
+MD5sum: 22355a82cdef43ef08c1ae191426af50
+SHA1: 1fc2f49cb72b7509740aa7e4bc67b4f5e970fdf0
+SHA256: d2dad77d33844733d175aa410121be17cfae87e17382a75055f5f5046937195b
+Section: debug
+Priority: extra
+Homepage: http://www.ogre3d.org/tikiwiki/MyGUI
+Description: Fast, simple and flexible GUI - debugging symbols
+ MyGUI is a GUI library which aims to be fast, flexible and simple GUIs in C++.
+  Features include
+    Layout Editor.
+    Multicolour text.
+    Per pixel cut.
+    Changing alpha support for widgets (also in states configuration).
+    Interface localisation.
+    Fast RTTI for safe casts.
+    Tool tips.
+    Animated cursors and pictures.
+    User xml resources.
+    Truetype fonts and fonts from texture.
+    Widgets controllers (moving, fading and so on).
+    Flexible configuration in xml config file.
+    Subskins with tiling, with direct access to texture.
+    Possibility to store any data in widgets items.
+    Skin themes.
+    Wrappers for fast UI development.
+    Drag'n'drop.
+ .
+ This package contains the MyGUI runtime engine debugging symbols.
+
+Package: libogre
+Version: 20130906-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 515940
+Provides: libogre,libogre-dev
+Filename: ./pool/deb/misc/libogre_20130906-1_amd64.deb
+Size: 230285282
+MD5sum: c8cf94be9e82dcaf128f611eacdd53c1
+SHA1: 6bf0abcf4fcd8d89db53d5ce58fad7c4da183559
+SHA256: 1d9d455e46cb4f8870e56f4174298f01b1b4aed9a7d9ce7ea1cc7c259305e7f2
+Section: checkinstall
+Priority: extra
+Description: Libogre
+
+Package: libopenjpeg2
+Source: openjpeg
+Version: 2:1.0~transitional
+Architecture: all
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 0
+Depends: libopenjpeg5
+Provides: libopenjpeg2
+Filename: ./pool/deb/ffmpeg-support/libopenjpeg2_1.0~transitional_all.deb
+Size: 690
+MD5sum: 6a8aee90db274aa47a0aaab206e06c1e
+SHA1: 4d433c7dca6fb19eaadcb2dec0703313003095cc
+SHA256: 5c3c699937567d5ec1560a98650fe464c7cd4073c8fd043640c309df8980865c
+Section: checkinstall
+Priority: extra
+Description: Transitional package for libopenjpeg2 to libopenjpeg5
+
+Package: libpng
+Version: 20141206.238e7646a89aa1c67020fd9d9c41ae4a7e12b6be~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 3056
+Depends: libc6
+Conflicts: libpng,libpng-dev,libpng12,libpng12-dev
+Replaces: libpng12,libpng12-dev,libpng,libpng-dev
+Provides: libpng,libpng-dev,libpng12,libpng12-dev
+Filename: ./pool/deb/libpng/libpng_20141206.238e7646a89aa1c67020fd9d9c41ae4a7e12b6be~raring1-1_amd64.deb
+Size: 673578
+MD5sum: d48296fe92d0d1ab52294fa1afa5b34f
+SHA1: 33e9c72cb9d193bd0ff863faa23e618ca7369288
+SHA256: 87f3f9603877b0ac87fa2a05ef0d7b61a1278fdbcfdecae607e6357f10bfb223
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libpostproc52
+Source: ffmpeg
+Version: 9:9.9-dummy
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Depends: ffmpeg
+Provides: libpostproc52
+Filename: ./pool/deb/ffmpeg-support/libpostproc52_9.9-dummy_amd64.deb
+Size: 646
+MD5sum: cf6f29c3ece8c6d8c3834fc3357c254e
+SHA1: 587115ebae95d3b41c8e07e0344a052bdcb7a630
+SHA256: 30c2c1ea39ff69f04dcdf59fd030eef2412008e3ec9b6831725401683b89d20b
+Section: media
+Priority: extra
+Description: Just a dummy file, to fix packaging issues."
+
+Package: libquicktime2
+Version: 2:2.5-20141408~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 5504
+Depends: libgl1-mesa-dev, zlib1g-dev, libjs-jquery, multiarch-support, libc6, libdv4, libfaad2, libjpeg8, libmp3lame0, libpng12-0, libschroedinger-1.0-0, libvorbis0a, libx264, zlib1g, ffmpeg
+Conflicts: quicktime-x11utils, quicktime-utils, libquicktime-doc, libquicktime-dev, libquicktime2
+Provides: quicktime-x11utils, quicktime-utils, libquicktime-doc, libquicktime-dev, libquicktime2
+Filename: ./pool/deb/libquicktime/libquicktime2_2.5-20141408~raring1-1_amd64.deb
+Size: 532516
+MD5sum: 26837e33d04c0d3a9b9ecec4dc6d3081
+SHA1: 25b3bfe68afe46a6841723dde5061365ba03b3d5
+SHA256: db9ffe877a4d30718b913eb3789866b6e4fc30bbe50396bbdd2c9b1b60ca373c
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libquicktime2-intel
+Version: 2:2.5-20141408~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 5524
+Depends: libgl1-mesa-dev, zlib1g-dev, libjs-jquery, multiarch-support, libc6, libdv4, libfaad2, libjpeg8, libmp3lame0, libpng12-0, libschroedinger-1.0-0, libvorbis0a, libx264-intel, zlib1g, ffmpeg-intel
+Conflicts: quicktime-x11utils, quicktime-utils, libquicktime-doc, libquicktime-dev, libquicktime2
+Provides: quicktime-x11utils, quicktime-utils, libquicktime-doc, libquicktime-dev, libquicktime2
+Filename: ./pool/deb/libquicktime/libquicktime2-intel_2.5-20141408~raring1-1_amd64.deb
+Size: 528608
+MD5sum: 834a3977d578db076434b4e0a348646f
+SHA1: e2758a1c6243880bc1ec28379b166ff23fed23ea
+SHA256: 210f143573694911f9a965c6df33f1684aa59c7bea6a8879a5883d443fe1c05f
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libsdl2.0-dbg
+Source: libsdl2.0
+Version: 2.0-20121117-1~quantal1
+Architecture: amd64
+Maintainer: Paulo Assis <pj.assis@gmail.com>
+Installed-Size: 2676
+Depends: libsdl2.0debian (= 2.0-20121117-1~quantal1)
+Filename: ./pool/deb/libsdl/libsdl2.0-dbg_2.0-20121117-1~quantal1_amd64.deb
+Size: 2510082
+MD5sum: 02cdcb6c9b2d9f0f25ef366f226cc154
+SHA1: 689fd2b6de868b028c1d0475305c98956bbd5ba8
+SHA256: 15c07136e5266bba676a2531419ff5b067ab6e834459bbfb7f8022770e006c78
+Section: debug
+Priority: extra
+Multi-Arch: same
+Homepage: http://www.libsdl.org/
+Description: Simple DirectMedia Layer debug files
+ SDL is a library that allows programs portable low level access to a video
+ framebuffer, audio output, mouse, and keyboard.
+ .
+ This package contains the debug symbols for the SDL library.
+
+Package: libsdl2.0-dev
+Source: libsdl2.0
+Version: 2.0-20121117-1~quantal1
+Architecture: amd64
+Maintainer: Paulo Assis <pj.assis@gmail.com>
+Installed-Size: 3447
+Depends: libsdl2.0debian (= 2.0-20121117-1~quantal1), libx11-dev, libxext-dev, libxt-dev, libxinerama-dev, libxcursor-dev, libxi-dev, libxxf86vm-dev, libxrandr-dev, libxv-dev, x11proto-core-dev, libts-dev, libaudiofile-dev, libpulse-dev, libasound2-dev, libdirectfb-dev (>= 1.0), libgl1-mesa-dev, libegl1-mesa-dev, libglu1-mesa-dev
+Conflicts: libsdl2-dev
+Replaces: libsdl2-dev
+Provides: libsdl2-dev
+Filename: ./pool/deb/libsdl/libsdl2.0-dev_2.0-20121117-1~quantal1_amd64.deb
+Size: 1428024
+MD5sum: 51bae1676df3e37ae4552fc2b150bb34
+SHA1: 9e03e8a74e2cba6382fc1475e06f217ab46147dc
+SHA256: 7dd39a72cf15adf2eb4a1b147505782b002ccbad36787c7dff46aa273b860d49
+Section: libdevel
+Priority: optional
+Homepage: http://www.libsdl.org/
+Description: Simple DirectMedia Layer development files
+ SDL is a library that allows programs portable low level access to a video
+ framebuffer, audio output, mouse, and keyboard.
+ .
+ This package contains the files needed to compile and link programs which
+ use SDL2.
+
+Package: libsdl2.0debian
+Source: libsdl2.0
+Version: 2.0-20121117-1~quantal1
+Architecture: amd64
+Maintainer: Paulo Assis <pj.assis@gmail.com>
+Installed-Size: 920
+Pre-Depends: multiarch-support
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.15), libdirectfb-1.2-9, libpulse0 (>= 1:0.99.1), libx11-6 (>= 2:1.2.99.901), libxcursor1 (>> 1.1.2), libxext6, libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2 (>= 2:1.2.0), libxxf86vm1
+Conflicts: libsdl2.0, libsdl2.0-all, libsdl2.0-esd, libsdl2.0-nas, libsdl2.0-oss, libsdl2.0debian-all, libsdl2.0debian-alsa, libsdl2.0debian-esd, libsdl2.0debian-nas, libsdl2.0debian-oss, libsdl2.0debian-pulseaudio
+Replaces: libsdl2.0debian-all, libsdl2.0debian-alsa, libsdl2.0debian-esd, libsdl2.0debian-nas, libsdl2.0debian-oss, libsdl2.0debian-pulseaudio
+Filename: ./pool/deb/libsdl/libsdl2.0debian_2.0-20121117-1~quantal1_amd64.deb
+Size: 339850
+MD5sum: b8399876376fe545ef959e9296d981b8
+SHA1: b62092cb32c018a2786ba4a0e75839b77d741192
+SHA256: 8152c03c6356abcfe6d10986e2aa7f5a19c67cc54c86d5c870e6c3b7bd41fabf
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.libsdl.org/
+Description: Simple DirectMedia Layer
+ SDL2 is a library that allows programs portable low level access to
+ a video framebuffer, audio output, mouse, and keyboard.
+ .
+ This version of SDL2 is compiled with X11, caca and DirectFB graphics
+ drivers and OSS, ALSA, NAS and PulseAudio sound drivers.
+
+Package: libshine2
+Version: 3:3.0.3~git20141204.8eea5cd12bd79c0f4656d32d0f8523918c9d31f6~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 280
+Depends: libc6
+Conflicts: libshine2,libshine2-intel,libshine-dev,libshine-dbg,shineenc,shine
+Replaces: libshine-dev
+Provides: libshine2,libshine-dev,libshine-dbg,shineenc,shine
+Filename: ./pool/deb/shine/libshine2_3.0.3~git20141204.8eea5cd12bd79c0f4656d32d0f8523918c9d31f6~raring1-1_amd64.deb
+Size: 50600
+MD5sum: d753e456234a95428ab5c1c6787f0ff6
+SHA1: 66ad96eec4bbe2be0307dc1973793243457b23cc
+SHA256: 491ccd8e7ffa5c01534fe8baef507c72b9338d4010543c4df77bee08c8d733be
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libshine2-intel
+Version: 3:3.0.3~git20141204.8eea5cd12bd79c0f4656d32d0f8523918c9d31f6~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 280
+Depends: libc6
+Conflicts: libshine2,libshine-dev,libshine-dbg,shineenc,shine
+Replaces: libshine2-intel,libshine-dev
+Provides: libshine2,libshine-dev,libshine-dbg,shineenc,shine
+Filename: ./pool/deb/shine/libshine2-intel_3.0.3~git20141204.8eea5cd12bd79c0f4656d32d0f8523918c9d31f6~raring1-1_amd64.deb
+Size: 50504
+MD5sum: 7db43472eb782afa0fb4bb77704945e8
+SHA1: 317215af3a300d14b1268784d033987c83f60a9a
+SHA256: db3cbd1bf4757f864da7df9e20b373c3326edbc3db78a4c6dda88caf127cd950
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libswscale-extra-2
+Source: ffmpeg
+Version: 9:9.9-dummy
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Depends: ffmpeg
+Provides: libswscale-extra-2
+Filename: ./pool/deb/ffmpeg-support/libswscale-extra-2_9.9-dummy_amd64.deb
+Size: 650
+MD5sum: 4a1d709b5ac9302f6b5c31dff664cc68
+SHA1: 187caadaab83134e14c300be1f762c5ae6795fca
+SHA256: c6663be021f5f9c5fd53353de314ce9ac7e9601d4d9ac8ef8e174a08ee7d7f38
+Section: media
+Priority: extra
+Description: Just a dummy file, to fix packaging issues."
+
+Package: libswscale2
+Source: ffmpeg
+Version: 9:9.9-dummy
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Depends: ffmpeg
+Provides: libswscale2
+Filename: ./pool/deb/ffmpeg-support/libswscale2_9.9-dummy_amd64.deb
+Size: 644
+MD5sum: 7c073abece43e9b9e8a5cb15560e5d48
+SHA1: 716b78b36a7f22e2c390d303f893dd0ec857ef0b
+SHA256: 0b631e3677cadc5f61b45784685a719f427a59af1d724f0dbb114be8b9cb0fa6
+Section: media
+Priority: extra
+Description: Just a dummy file, to fix packaging issues."
+
+Package: libtheora0
+Version: 1:0.3~git20140408.19189~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 12052
+Depends: libc6
+Conflicts: theora0,theora-dev,theora-dbg,theora-doc,theora
+Replaces: libtheora-dev
+Provides: libtheora0,libtheora-dev,theora-dbg,theora-doc,theora
+Filename: ./pool/deb/theora/libtheora0_0.3~git20140408.19189~raring1-1_amd64.deb
+Size: 1563766
+MD5sum: fb69d85402b2ba226d7faa338eddcb65
+SHA1: 26bda2d312a24867248330ba0f47d534a0bb34c3
+SHA256: 8efbcfb456ce433cea81f60eb08ff7d0e7243b9fc74c26fde498e5fa56157a99
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libtinyxml2
+Version: 20121208-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 328
+Conflicts: libtinyxml-dev,libtinyxml2.6.2,libtinyxml2-0.0.0,libtinyxml2-dev
+Replaces: libtinyxml-dev,libtinyxml2.6.2,libtinyxml2-0.0.0,libtinyxml2-dev
+Provides: libtinyxml,libtinyxml2,libtinyxml-dev,libtinyxml2.6.2,libtinyxml2-0.0.0,libtinyxml2-dev
+Filename: ./pool/deb/tinyxml/libtinyxml2_20121208-1_amd64.deb
+Size: 77734
+MD5sum: 522c90d4e8f73dc4383b443061d791eb
+SHA1: 9425a6329d66d5f8bec2f33b25fb07ba1ba23fbb
+SHA256: 3c3c7b07218fc3033e099a51063b759c0247370df93491077eccd951a07281bb
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libunshield-dev
+Source: unshield
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Evgeni Golov <evgeni@debian.org>
+Installed-Size: 9
+Depends: libunshield0 (= 1.0-1)
+Filename: ./pool/deb/unshield/libunshield-dev_1.0-1_amd64.deb
+Size: 5364
+MD5sum: 87ded700716ea35c25d7eba2502a32fd
+SHA1: ea3fb331babfb98760bab26555f5e15b78c981b5
+SHA256: 08671a3f9ffdfa9a168f7614b7790434ffa3a20e3170d91fe8062c534ac3073a
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/twogood/unshield/
+Description: development files for libunshield
+ This are libraries to create applications extracting CAB files from
+ InstallShield installers used to be installed on Windows CE devices or
+ Windows desktop machines.
+ .
+ This package contains the development files needed to link applications
+ against libunshield.
+
+Package: libunshield0
+Source: unshield
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Evgeni Golov <evgeni@debian.org>
+Installed-Size: 45
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.4), zlib1g (>= 1:1.1.4)
+Conflicts: liborange, libunshield
+Replaces: libunshield
+Filename: ./pool/deb/unshield/libunshield0_1.0-1_amd64.deb
+Size: 20426
+MD5sum: abce400b3980b6e24439f47859445fa2
+SHA1: 80e2eb029d7ebcbbeef079741424ceda143f9864
+SHA256: 7fb456ec238d8e73f33ab491544e7acde723e31e11c8cac4ca2b47e3320ac7bb
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/twogood/unshield/
+Description: library to extract CAB files from InstallShield installers
+ This are libraries to create applications extracting CAB files from
+ InstallShield installers used to be installed on Windows CE devices or
+ Windows desktop machines.
+
+Package: libvidstab
+Version: 1:1.0-20130906-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 348
+Provides: libvidstab
+Filename: ./pool/deb/misc/libvidstab_1.0-20130906-1_amd64.deb
+Size: 99960
+MD5sum: 24e5534d55a35b68f939a3ec67c2acf2
+SHA1: 7043324c0ff123b10924fb46ba94e9297ee022c1
+SHA256: 176b7afb7aab5cfffb1ed6d384c81b80f4951f2bca405b462cd230e144e4925c
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libvpx1
+Version: 1:2.1~git20141408.1d476a9ba4d7d52a3d43a81d887b67d58bd90b6b~saucy1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 9452
+Depends: libc6
+Conflicts: libvpx-dev:amd64,libvpx-dbg:amd64,libvpx-doc:amd64,libvpx1:amd64
+Provides: libvpx-dev:amd64,libvpx-dbg:amd64,libvpx-doc:amd64,libvpx1:amd64
+Filename: ./pool/deb/libvpx/libvpx1_2.1~git20141408.1d476a9ba4d7d52a3d43a81d887b67d58bd90b6b~saucy1-1_amd64.deb
+Size: 1195948
+MD5sum: 0a99cdab5f708d5df2ceff65ea32e698
+SHA1: 7c20d5fe0d081f8aad9b57483792dedaab1479f5
+SHA256: 8e0d6880bb21253ebb9af83dd10ca19ac70540ecbc98e178fdfe3ac371d38b71
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libx264
+Version: 2:0~git20142107.6447e1201da09a303ad568b04a16b56ed5b51cea~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 3396
+Depends: libc6
+Conflicts: x264,libx264-intel,libx264-dev,libx264-dbg,libx264-doc,libx264-123,libx264-129
+Replaces: x264,libx264-dev,libx264-dbg,libx264-doc,libx264-123,libx264-129
+Provides: x264,libx264-dev,libx264-dbg,libx264-doc,libx264-123,libx264-129
+Filename: ./pool/deb/x264/libx264_0~git20142107.6447e1201da09a303ad568b04a16b56ed5b51cea~raring1-1_amd64.deb
+Size: 769456
+MD5sum: f403bee86bf89da8747e49ac89580917
+SHA1: 2d8d31d0859ed82509ccdc88c0f7263b340965b7
+SHA256: bd7ae26c56c8a7f652b37cbd117c3e75c98f2fd5eaa674138c19f0f2bb056add
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libx264-intel
+Version: 2:0~git20142107.6447e1201da09a303ad568b04a16b56ed5b51cea~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 3384
+Depends: libc6
+Conflicts: x264,libx264,libx264-dev,libx264-dbg,libx264-doc,libx264-123,libx264-129
+Replaces: libx264,x264,libx264-dev,libx264-dbg,libx264-doc,libx264-123,libx264-129
+Provides: x264,libx264-dev,libx264-dbg,libx264-doc,libx264-123,libx264-129
+Filename: ./pool/deb/x264/libx264-intel_0~git20142107.6447e1201da09a303ad568b04a16b56ed5b51cea~raring1-1_amd64.deb
+Size: 763722
+MD5sum: b30d3199fb3635429ff6adcae06c4c66
+SHA1: c56287d81fe91c81b327bc0ac63560efd4dca0dd
+SHA256: 4126c1be28c5858d77def1dc0f3f7b40760529c154bad2e7b3406da0ed58e2c5
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: libxvidcore4
+Version: 3:3.3~git20141408.2093~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 1864
+Depends: libc6
+Conflicts: libxvidcore,libxvidcore-dev,libxvidcore-dbg,libxvidcore-doc,libxvidcore4
+Provides: libxvidcore4,libxvidcore-dev,libxvidcore-dbg,libxvidcore-doc,libxvidcore
+Filename: ./pool/deb/xvid/libxvidcore4_3.3~git20141408.2093~raring1-1_amd64.deb
+Size: 273314
+MD5sum: d9df66c42b0a4a810b15de947ddafff9
+SHA1: 2ba66bc2477b1d25917c848e30eef2ded059eb38
+SHA256: b51f0a0a743332c8716f3e9746aa819e7144f031a59be37b83288cf6b9f2221e
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: linux-headers-3.16.0-999
+Source: linux
+Version: 3.16.0-999.201408140251
+Architecture: all
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 63061
+Depends: coreutils | fileutils (>= 4.0)
+Filename: ./pool/deb/kernel/linux-headers-3.16.0-999_3.16.0-999.201408140251_all.deb
+Size: 13135934
+MD5sum: 30eae856868909b8934480a991ef5c08
+SHA1: 5b0fcdfff7c0936300b5c3bcf654b819e76cab9d
+SHA256: d5ecdf66502fb5aa0850817635c69ea85959b16eb0fd236a9591196f648dd6c5
+Section: devel
+Priority: optional
+Multi-Arch: foreign
+Description: Header files related to Linux kernel version 3.16.0
+ This package provides kernel header files for version 3.16.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-headers-3.16.0-999/debian.README.gz for details
+
+Package: linux-headers-3.16.0-999-generic
+Source: linux
+Version: 3.16.0-999.201408140251
+Architecture: amd64
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 13392
+Depends: linux-headers-3.16.0-999, libc6 (>= 2.14)
+Provides: linux-headers, linux-headers-3.0
+Filename: ./pool/deb/kernel/linux-headers-3.16.0-999-generic_3.16.0-999.201408140251_amd64.deb
+Size: 1130428
+MD5sum: 0e1f4846c0d4594806a5c71e74a1ea20
+SHA1: 6d8174690ae9f39f54287ff5fb3d4f56cc17a3ba
+SHA256: 4403d0daeafaef09b7d5feedbf2aa32e0d5b1172a99b7f85ea5bbc8874723de6
+Section: devel
+Priority: optional
+Description: Linux kernel headers for version 3.16.0 on 64 bit x86 SMP
+ This package provides kernel header files for version 3.16.0 on
+ 64 bit x86 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-3.16.0-999/debian.README.gz for details.
+
+Package: linux-headers-3.16.0-999-lowlatency
+Source: linux
+Version: 3.16.0-999.201408140251
+Architecture: amd64
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 13368
+Depends: linux-headers-3.16.0-999, libc6 (>= 2.14)
+Provides: linux-headers, linux-headers-3.0
+Filename: ./pool/deb/kernel/linux-headers-3.16.0-999-lowlatency_3.16.0-999.201408140251_amd64.deb
+Size: 1129792
+MD5sum: 496aec1cc780f2407080fda83e6ddbd2
+SHA1: eb0e433d9392016cd0aa01af6c40f1c2d0b1fd6c
+SHA256: fb2278e8918b299582657c142ec9e03dfc3d0daa85683236d9c6fc42626341f8
+Section: devel
+Priority: optional
+Description: Linux kernel headers for version 3.16.0 on 64 bit x86 SMP
+ This package provides kernel header files for version 3.16.0 on
+ 64 bit x86 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-3.16.0-999/debian.README.gz for details.
+
+Package: linux-image-3.16.0-999-generic
+Source: linux
+Version: 3.16.0-999.201408140251
+Architecture: amd64
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 198317
+Pre-Depends: dpkg (>= 1.10.24)
+Depends: initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3)
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo (>= 19.1)
+Suggests: fdutils, linux-doc-3.16.0 | linux-source-3.16.0, linux-tools, linux-headers-3.16.0-999-generic
+Conflicts: hotplug (<< 0.0.20040105-1)
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, linux-image-3.0, redhat-cluster-modules
+Filename: ./pool/deb/kernel/linux-image-3.16.0-999-generic_3.16.0-999.201408140251_amd64.deb
+Size: 53858436
+MD5sum: 06bce71980b1119c27b5baf0ee8ccc2a
+SHA1: 0302b8a3eab81cfad195ae236beec2c68d131709
+SHA256: 74b847a33c2ec3f1bc3647c0f13172911a3e9446603e734fc8fe98d85f33f5f0
+Section: kernel
+Priority: optional
+Description: Linux kernel image for version 3.16.0 on 64 bit x86 SMP
+ This package contains the Linux kernel image for version 3.16.0 on
+ 64 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-generic meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-3.16.0-999-lowlatency
+Source: linux
+Version: 3.16.0-999.201408140251
+Architecture: amd64
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 198124
+Pre-Depends: dpkg (>= 1.10.24)
+Depends: initramfs-tools (>= 0.36ubuntu6), module-init-tools (>= 3.3-pre11-4ubuntu3)
+Recommends: grub-pc | grub-efi-amd64 | grub-efi-ia32 | grub | lilo (>= 19.1)
+Suggests: fdutils, linux-doc-3.16.0 | linux-source-3.16.0, linux-tools, linux-headers-3.16.0-999-lowlatency
+Conflicts: hotplug (<< 0.0.20040105-1)
+Provides: fuse-module, ivtv-modules, kvm-api-4, linux-image, linux-image-3.0, redhat-cluster-modules
+Filename: ./pool/deb/kernel/linux-image-3.16.0-999-lowlatency_3.16.0-999.201408140251_amd64.deb
+Size: 53788452
+MD5sum: bc9a2bc3a665812faddd081136d57f46
+SHA1: 51950f2fd41a40904e06ef6f616c1348d91b944f
+SHA256: baad324b5594b593fca6ae63762ccc147ecaef084ef47e05e03e57ad39127404
+Section: kernel
+Priority: optional
+Description: Linux kernel image for version 3.16.0 on 64 bit x86 SMP
+ This package contains the Linux kernel image for version 3.16.0 on
+ 64 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Lowlatency processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-lowlatency meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: mplayer
+Version: 6:6.0-SVN-37251.20141308~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 179004
+Depends: libc6,ffmpeg,libbluray1,libcaca0,libcdparanoia0,libcdio-cdda1,libcdio-paranoia1,libmad0,libmpg123-0,liba52-0.7.4,libdv4,libdirectfb-1.2-9,libxss1,libaa1,libegl1-mesa,libaudio2,libcrystalhd3,libfaac0,libdca0,libdvdnav4,libdvdread4,libenca0,libesd0,libfaad2,libfontconfig1,libfreetype6,libfribidi0,libgif4,libgl1,libjack-jackd2-0,libjpeg8,liblircclient0,libmpeg2-4,libopenal1,libpng12-0,libpulse0,libsdl1.2debian,libsmbclient,libspeex1,libsvga1,libtheora0,libtinfo5,libvdpau1,libx11-6,libxext6,libxinerama1,libxv1,libxvidcore4,libxvmc1,libxxf86dga1,libxxf86vm1,zlib1g,libilbc,libx264,libvorbisidec1,libbs2b0
+Conflicts: mplayer2,mplayer2-dev,mplayer2-dbg,mplayer2-doc,mplayer,mplayer-dev,mplayer-dbg,mplayer-doc,mencoder
+Replaces: mplayer-dev,mplayer-dbg,mplayer-doc,mencoder
+Provides: mplayer,mplayer-dev,mplayer-dbg,mplayer-doc,mencoder
+Filename: ./pool/deb/mplayer/mplayer_6.0-SVN-37251.20141308~raring1-1_amd64.deb
+Size: 36708906
+MD5sum: 61540adaee94aaf9289587de7373bbd1
+SHA1: 6374afea132f46e2c34a9ddabdd88f6b76183765
+SHA256: ef946da4432f182a263a08ee2100c1425f6aca10626b821482d66749921ec67f
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: mplayer-intel
+Version: 6:6.0-SVN-37251.20141308~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 178000
+Depends: libc6,ffmpeg-intel,libbluray1,libcaca0,libcdparanoia0,libcdio-cdda1,libcdio-paranoia1,libmad0,libmpg123-0,liba52-0.7.4,libdv4,libdirectfb-1.2-9,libxss1,libaa1,libegl1-mesa,libaudio2,libcrystalhd3,libfaac0,libdca0,libdvdnav4,libdvdread4,libenca0,libesd0,libfaad2,libfontconfig1,libfreetype6,libfribidi0,libgif4,libgl1,libjack-jackd2-0,libjpeg8,liblircclient0,libmpeg2-4,libopenal1,libpng12-0,libpulse0,libsdl1.2debian,libsmbclient,libspeex1,libsvga1,libtheora0,libtinfo5,libvdpau1,libx11-6,libxext6,libxinerama1,libxv1,libxvidcore4,libxvmc1,libxxf86dga1,libxxf86vm1,zlib1g,libilbc,libx264-intel,libvorbisidec1,libbs2b0
+Conflicts: mplayer2,mplayer2-dev,mplayer2-dbg,mplayer2-doc,mplayer,mplayer-dev,mplayer-dbg,mplayer-doc,mencoder
+Replaces: mplayer-dev,mplayer-dbg,mplayer-doc,mencoder
+Provides: mplayer,mplayer-dev,mplayer-dbg,mplayer-doc,mencoder
+Filename: ./pool/deb/mplayer/mplayer-intel_6.0-SVN-37251.20141308~raring1-1_amd64.deb
+Size: 36390548
+MD5sum: da75717f23cfe3f67e8e847121002a15
+SHA1: 320690889282c13006201c94287a96e3eb02b0d7
+SHA256: a9f6bac747f493a654f331bf2137b987d94e3eae7b2a07c0cef5c25ce501cdba
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: mupen64plus
+Source: mupen64plus
+Version: 2:2.00~DEV:0:f591a4df172c-201301211142
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 10000
+Conflicts: mupen64plus-data, mupen64plus-config-abi-2.2, mupen64plus-input-all, mupen64plus-input, mupen64plus-rsp-all, mupen64plus-rsp, mupen64plus-video-all, mupen64plus-video, mupen64plus-audio-all, mupen64plus-audio, mupen64plus-ui-console, libmupen64plus2, libmupen64plus-dev
+Replaces: mupen64plus, mupen64plus-ui-console, libmupen64plus2, libmupen64plus-dev
+Provides: mupen64plus,mupen64plus
+Filename: ./pool/deb/mupen64plus/mupen64plus_2.00~DEV:0:f591a4df172c-201301211142_amd64.deb
+Size: 3158598
+MD5sum: 635ea10cea43dbbcc5b7b42f26f0235f
+SHA1: 5638676b79b97d9dd16217953997c333bcc93cc4
+SHA256: f04eadf9fcbbf5a44fce15ef902b4992dc0760d057b9557ffcd144c7ae3a1a17
+Section: games
+Priority: extra
+Description: Package Handcreated by Kingtiger
+
+Package: mygui-doc
+Source: mygui
+Version: 3.2.0-5
+Architecture: all
+Maintainer: Bret Curtis <psi29a@gmail.com>
+Installed-Size: 33324
+Filename: ./pool/deb/mygui/mygui-doc_3.2.0-5_all.deb
+Size: 5407030
+MD5sum: 71c3817876c80d1cefb472e2a12f29fc
+SHA1: 62fa38ba2391b88992e33f9f677740e0524efbd7
+SHA256: 1712832cb2b93c3330173402c8bc5fee52a0097907693f7ad932e1facbc158fe
+Section: doc
+Priority: optional
+Homepage: http://www.ogre3d.org/tikiwiki/MyGUI
+Description: API documentations for MyGUI library
+ MyGUI is a GUI library which aims to be fast, flexible and simple GUIs in C++.
+  Features include
+    Layout Editor.
+    Multicolour text.
+    Per pixel cut.
+    Changing alpha support for widgets (also in states configuration).
+    Interface localisation.
+    Fast RTTI for safe casts.
+    Tool tips.
+    Animated cursors and pictures.
+    User xml resources.
+    Truetype fonts and fonts from texture.
+    Widgets controllers (moving, fading and so on).
+    Flexible configuration in xml config file.
+    Subskins with tiling, with direct access to texture.
+    Possibility to store any data in widgets items.
+    Skin themes.
+    Wrappers for fast UI development.
+    Drag'n'drop.
+ .
+ This package contains the MyGUI API reference for the MyGUIEngine library.
+
+Package: nasm
+Version: 1:10.9~git.b775985beefc968f9862d45764f7c7ad8e949299~saucy1-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2352
+Depends: libc6,dpkg
+Conflicts: nasm
+Provides: nasm
+Filename: ./pool/deb/nasm/nasm_10.9~git.b775985beefc968f9862d45764f7c7ad8e949299~saucy1-1_amd64.deb
+Size: 567996
+MD5sum: 161ff3b0660ac36b2a0bd6a5a9faa32a
+SHA1: 6bdc4fde7c7080a67c3d77bf1f59bbdc9a98084f
+SHA256: c32fd1385948344a8caf2fb200e52e4d752f27479bcb0446278c25f140bd0cf7
+Section: devel
+Priority: extra
+Description: General-purpose x86 assembler(GIT Version)
+ Package created with checkinstall 1.6.2
+
+Package: nyancat
+Version: 20140205.c502754f9b79b03c912815f6139ccfcc75ecf513~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 92
+Depends: libc6
+Conflicts: nyancat,nyancat-dev
+Provides: nyancat,nyancat-dev
+Filename: ./pool/deb/nyancat/nyancat_20140205.c502754f9b79b03c912815f6139ccfcc75ecf513~raring1-1_amd64.deb
+Size: 11938
+MD5sum: e21c1ffa2d310ccd147d46b4aa714da7
+SHA1: e061ee4448306b48972a66e40e27edcf4aa72439
+SHA256: 11964bb3343ef4b326a937d14e5d24923086582c771b8b28b90057a610df5c0c
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: ocl-icd-libopencl1
+Source: ocl-icd
+Version: 2.1.3-4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 131
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14)
+Suggests: opencl-icd
+Conflicts: amd-app, libopencl1, nvidia-libopencl1-dev
+Replaces: amd-app, libopencl1, nvidia-libopencl1-dev
+Provides: libopencl-1.1-1, libopencl-1.2-1, libopencl1
+Filename: ./pool/deb/ocl-icd-libopencl1/ocl-icd-libopencl1_2.1.3-4_amd64.deb
+Size: 28148
+MD5sum: 3ad1a139f74c6cd4df95e3a31af142ff
+SHA1: 1bc5eed54d29dc22d4d3022ea187fdddc98eaf94
+SHA256: 26b00d5cc561c9798046a1e19d45aefc047dad2d80e2ec29bc44d551233667dd
+Section: libs
+Priority: extra
+Multi-Arch: same
+Homepage: https://forge.imag.fr/projects/ocl-icd/
+Description: Generic OpenCL ICD Loader
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package contains an installable client driver loader (ICD Loader)
+ library that can be used to load any (free or non-free) installable client
+ driver (ICD) for OpenCL. It acts as a demultiplexer so several ICD can
+ be installed and used together.
+Original-Maintainer: Vincent Danjean <vdanjean@debian.org>
+
+Package: openra-tools
+Source: openra
+Version: 1:1.0+scripts-dummy
+Architecture: all
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 2704
+Provides: openra-tools
+Filename: ./pool/deb/openra-tools/openra-tools.deb
+Size: 1132
+MD5sum: 3e79a290d6f27d61ef514150be82b06c
+SHA1: e253e37f19a20d3eb2a53b9560c4d4177ce5ff89
+SHA256: 30cbce30077e8c73a4b6ef8f3c35f274fb4eb49609505943363ccfd90d494f7d
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: openra-unstable
+Version: 1:20140307.Playtest~git:0d61a1d19ad99388e145d44998c5b57aa819db85~raring1-1
+Architecture: amd64
+Maintainer: Michael Novick mn2010@tormail.org/Chris Forbes chrisf@ijw.co.nz
+Installed-Size: 27780
+Depends: libopenal1, mono-runtime, libmono-winforms2.0-cil, libfreetype6, libsdl1.2debian, libgl1-mesa-glx, libgl1-mesa-dri, libmono-i18n2.0-cil, openra-tools
+Conflicts: openra
+Replaces: openra
+Provides: openra,openra-unstable
+Filename: ./pool/deb/OpenRA/*.deb
+Size: 8237174
+MD5sum: abc2d0b9b7bb1a52a61347aeccb0074d
+SHA1: 28f0cccc83e0a36e0df0b9392b58273acc8d672d
+SHA256: 64a43102bfe49908fb17186dc0d3b3d83d4e3b1dc321ff040ca6551fad316628
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: oss-linux
+Version: 4.2-2006
+Architecture: amd64
+Maintainer: 4Front Technologies <support@opensound.com>
+Installed-Size: 6368
+Depends: binutils, gcc, libc6, libgtk2.0-0, sed (>= 1.0.0)
+Suggests: libsdl1.2debian-oss | libsdl1.2debian-all, libesd0, libwine-oss, libsox-fmt-oss, mpg123, gstreamer0.10-plugins-bad (>= 0.10.7), libasound2-plugins
+Conflicts: libflashsupport
+Provides: oss
+Filename: ./pool/deb/misc/oss-linux-4.2-2006_amd64.deb
+Size: 2347522
+MD5sum: 1da913b133f7a1cdeee04f13bef676c6
+SHA1: c7c760d4b7483a5c9d29aab701a5a0a1bdf03a20
+SHA256: 0f37988a7f016cebaa2d7dcfd230e1d67272511a64b0ec863138d6476a311723
+Section: sound
+Priority: optional
+Description: Open Sound System (http://www.opensound.com)
+ OSS provides libraries and necessary drivers for practically all sound
+  cards on the market including PnP and many PCI ones which enable you
+  to play sound files, compose music, use MIDI (only included in the
+  testing releases) and adjust your sound card using various user space
+  programs.
+Build-Depends: build-essential sed gawk libtool libgtk2.0-dev
+
+Package: pbzip2
+Version: 1:1.18.9-AMDFAM10-O3-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 160
+Depends: bzip2
+Conflicts: pbzip2
+Provides: pbzip2
+Filename: ./pool/deb/pbzip2/pbzip2_1.18.9-AMDFAM10-O3-1_amd64.deb
+Size: 49098
+MD5sum: 605925bf952ff30bde3937068586b8a1
+SHA1: 4edf29d1d0adb9b397a338ad3d4e0d51db5af8a9
+SHA256: bd8827cd50f95a6f022016933b224e76e15d1e244ee1961305ca8a6e6c449c69
+Section: Application/File
+Priority: extra
+Description: Parallel Bzip2
+ Pbzip2 Local-Build(AMD-fam10 - o3)
+
+Package: pcsxr
+Version: 2:0~git20141408.91226~trusty1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 6724
+Depends: libc6
+Conflicts: pcsxr,pcsxr-dev,pcsxr-dbg,pcsxr-doc,pcsxr1
+Provides: pcsxr,pcsxr-dev,pcsxr-dbg,pcsxr-doc,pcsxr1
+Filename: ./pool/deb/pcsxr/pcsxr_0~git20141408.91226~trusty1-1_amd64.deb
+Size: 1557362
+MD5sum: acead1d6db939361a2e116214f30b486
+SHA1: a2898904565df700525cdf4fcd95c4f5526e041c
+SHA256: 26f1d3feef50d4edd919ad98ace50b75d7d900a8feb6f3b22c2c29d3fc07e0a4
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: physfs
+Version: 1:0.3~git20131909.1337:3b2e649c044c~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 2708
+Depends: libc6
+Conflicts: physfs,libphysfs-dev,libphysfs1-dbg,libphysfs1-doc,libphysfs1
+Replaces: libphysfs-dev,libphysfs1-dbg,libphysfs1-doc,libphysfs1
+Provides: physfs,libphysfs-dev,libphysfs1-dbg,libphysfs1-doc,libphysfs1
+Filename: ./pool/deb/libphysfs/physfs_0.3~git20131909.1337:3b2e649c044c~raring1-1_amd64.deb
+Size: 777996
+MD5sum: 1f9dcb78243d060878af000d46ee86cb
+SHA1: 8555e1668e25ab1cd6f58f05d39b676ba59170b7
+SHA256: 5a8d6410e342e223b611bb7fcfe25cc0e638c800c1bd1adc0c0388436f877e88
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: pianobar
+Version: 1:9.3.1-20140708~94e0cb0fbabd0ed3da7dd90808b5c7385d9e419b~trusty1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 160
+Depends: libc6,libfaad2,ffmpeg,libmad0
+Conflicts: pianobar,pianobar-dev,libpiano0,libpiano-dev
+Provides: pianobar,pianobar-dev,libpiano0,libpiano-dev
+Filename: ./pool/deb/pianobar/pianobar_9.3.1-20140708~94e0cb0fbabd0ed3da7dd90808b5c7385d9e419b~trusty1-1_amd64.deb
+Size: 42046
+MD5sum: 296a687427f2fe10eb8e97cb9278e45e
+SHA1: 0997e6804e87642b236e69be6f2b1c9c44617f58
+SHA256: f4d8a6c01998741d53239b79121b63e7c1c2c28fb86a61b04a7f6552de6f1fe3
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: pxelinux
+Source: syslinux
+Version: 3:6.03~pre1+dfsg-4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 315
+Recommends: syslinux-common
+Suggests: tftpd-hpa
+Breaks: syslinux-common (<< 3:6.03~pre1+dfsg-4)
+Replaces: syslinux-common
+Filename: ./pool/deb/syslinux/pxelinux_6.03~pre1+dfsg-4_amd64.deb
+Size: 181120
+MD5sum: 1d500bfab265cd2b81ab43b07e03de22
+SHA1: 189e2abf3df6c8493944ce72b0e836cf9f09fc10
+SHA256: 3acf16157da187fd97ba65d50cfa418826ff975ca964bf8316012d63934eabda
+Section: admin
+Priority: optional
+Homepage: http://www.syslinux.org/
+Description: collection of bootloaders (PXE network bootloader)
+ syslinux is a suite of bootloaders, currently supporting DOS FAT and NTFS
+ filesystems (SYSLINUX), Linux ext2/ext3/ext4, btrfs, and xfs filesystems
+ (EXTLINUX), PXE network boots (PXELINUX), or ISO 9660 CD-ROMs (ISOLINUX).
+ .
+ This package contains the bootloader for PXE network boots (PXELINUX).
+Original-Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+
+Package: rar
+Version: 2:5.0.0-B8~20130803-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 948
+Depends: libc6,libgcc1,libstdc++6
+Conflicts: rar,unrar
+Replaces: unrar
+Provides: rar,unrar
+Filename: ./pool/deb/rar/rar_5.0.0-B8~20130803-1_amd64.deb
+Size: 473022
+MD5sum: 67d0c063c8021e5f7bcdc02d0fda8d30
+SHA1: 65acc13f21454f6da33427fbb55832c5eb579c46
+SHA256: 3fb8f5965dbcd98359bbe04ea127582d24918fb51185330f0081ade2217548fa
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: sfml
+Version: 1:1.0~DEV-GIT:802b9378cbb41ea46055b05050e99fd097d579bf-201301240026-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 15232
+Replaces: libsfml,libsfml-dev,libsfml-doc,libsfml1.6-dbf,libsml-window1.6,libsfml-system1.6,libsfml-network1.6,libsfml-graphics1.6,libsfml-audio1.6
+Provides: sfml
+Filename: ./pool/deb/SFML/sfml_1.0~DEV-GIT:802b9378cbb41ea46055b05050e99fd097d579bf-201301240026-1_amd64.deb
+Size: 2199868
+MD5sum: 9adfd10d64fd9e6d37349ab86f6211c4
+SHA1: defdf828c6402ec805074a3596c676bda48648dc
+SHA256: ab227379da141c890ecc8038248f30c139e6d378574d0848fd5eced80fa9d9ab
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: smplayer
+Version: 1:14.3.1-git20140529-ubuntu2-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 13424
+Depends: mplayer2 | mplayer, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libqt4-network (>= 4:4.5.3), libqt4-script (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Conflicts: smplayer,smtube
+Replaces: smplayer,smtube
+Provides: smplayer,smtube
+Filename: ./pool/deb/smplayer/smplayer_14.3.1-git20140529-ubuntu2-1_amd64.deb
+Size: 2619894
+MD5sum: f0a6036b0dbbb9a03f4332fea1b9a7a6
+SHA1: a11722fe9475c7f342b7fff20df312af581bf37b
+SHA256: 4b5d4bcacf4332ca7ab3b634f747dd77a058caee66adf6e5e1e3cc070d43d52e
+Section: Applications/Multimedia
+Priority: extra
+Description: A great front-end for MPlayer
+ Frontend for Mplayer/Mplayer2. Based on QT.
+
+Package: smplayer-skins
+Version: 1:20130605
+Architecture: all
+Maintainer: Ricardo Villalba <rvm@users.sourceforge.net>
+Installed-Size: 906
+Depends: smplayer
+Filename: ./pool/deb/smplayer/smplayer-skins_20130605_all.deb
+Size: 441738
+MD5sum: e9caf888cac01ea56735551b0c9a6197
+SHA1: ca5f50766b303804cd673c42f2ba7b6ae6843157
+SHA256: e301218a1ff06d671a9346ba5653dc655c21b3ce4a0b8a1978a57e78470f26d8
+Section: graphics
+Priority: extra
+Description: Skin themes for SMPlayer
+ SMPlayer intends to be a complete front-end for Mplayer, from basic features
+ like playing videos, DVDs, and VCDs to more advanced features like support
+ for Mplayer filters and more. One of the main features is the ability to
+ remember the state of a played file, so when you play it later it will resume
+ at the same point and with the same settings. smplayer is developed with
+ the Qt toolkit, so it's multi-platform.
+ .
+ This package provides skins for SMPlayer.
+
+Package: smplayer-themes
+Version: 1:20131003
+Architecture: all
+Maintainer: Ricardo Villalba <rvm@users.sourceforge.net>
+Installed-Size: 2306
+Depends: smplayer
+Filename: ./pool/deb/smplayer/smplayer-themes_20131003_all.deb
+Size: 2138024
+MD5sum: 6ada7c5f32fb758ff9338c2a0b692476
+SHA1: fa9c16881ec32fb6a27146b8002dba2dc1245d01
+SHA256: fffe531de8a96af4f456b1a00c2e80cc816d2c571beca5453e5c010e6835e539
+Section: graphics
+Priority: extra
+Description: Icon themes for SMPlayer
+ SMPlayer intends to be a complete front-end for Mplayer, from basic features
+ like playing videos, DVDs, and VCDs to more advanced features like support
+ for Mplayer filters and more. One of the main features is the ability to
+ remember the state of a played file, so when you play it later it will resume
+ at the same point and with the same settings. smplayer is developed with
+ the Qt toolkit, so it's multi-platform.
+ .
+ This package provides icon themes for SMPlayer.
+
+Package: sndio
+Version: 20130813-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 428
+Depends: libc6,libao4
+Conflicts: sndio
+Provides: sndio
+Filename: ./pool/deb/sndio/sndio_20130813-1_amd64.deb
+Size: 172500
+MD5sum: e4afcee9e345dd02c73baaad5556327b
+SHA1: 08ee35fc8c189b38c2ae2029f03464c77fa8beeb
+SHA256: e5a121314e5a991a0edfc7e3f187b2849e2cf7a521804db7d795032a53175d3a
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: supertux2
+Version: 0:3.4~git20140208.d1536f9d0a34f74607aa6b20c81b02ed9010c11e~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 106800
+Depends: libc6
+Conflicts: supertux2,supertux2-dev,supertux2-dbg,supertux2-doc,supertux
+Provides: supertux2,supertux2-dev,supertux2-dbg,supertux2-doc,supertux
+Filename: ./pool/deb/supertux/supertux2_3.4~git20140208.d1536f9d0a34f74607aa6b20c81b02ed9010c11e~raring1-1_amd64.deb
+Size: 66541822
+MD5sum: 201a913f0f2870cd6bf1fa16c1e99e42
+SHA1: 8b53f5a128c5c3dc7089da790626ce96c2c91bf4
+SHA256: 4bf931beb140853b89e75a388d057055b4c413e03cf188f60e90d52cbed23148
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: syslinux
+Version: 3:6.03~pre1+dfsg-4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 323
+Depends: libc6 (>= 2.8), mtools
+Recommends: syslinux-common
+Suggests: dosfstools
+Breaks: syslinux-common (<< 3:6.03~pre1+dfsg-4)
+Replaces: syslinux-common
+Filename: ./pool/deb/syslinux/syslinux_6.03~pre1+dfsg-4_amd64.deb
+Size: 137682
+MD5sum: ada92fd932876c8af47fd2e454ce76bd
+SHA1: 110db0f1df6d0a4c55dc02441d603c28fd845d51
+SHA256: 7c583daa91af6b429e5b465c67aaf6a2033549efb8e5b824e92c921dab3d21b1
+Section: admin
+Priority: optional
+Homepage: http://www.syslinux.org/
+Description: collection of bootloaders (DOS FAT and NTFS bootloader)
+ syslinux is a suite of bootloaders, currently supporting DOS FAT and NTFS
+ filesystems (SYSLINUX), Linux ext2/ext3/ext4, btrfs, and xfs filesystems
+ (EXTLINUX), PXE network boots (PXELINUX), or ISO 9660 CD-ROMs (ISOLINUX).
+ .
+ This package contains the bootloader for DOS FAT and NTFS filesystems
+ (SYSLINUX).
+Original-Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+
+Package: syslinux-common
+Source: syslinux
+Version: 3:6.03~pre1+dfsg-4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 3100
+Breaks: extlinux (<< 3:6.03~pre1+dfsg-4), isolinux (<< 3:6.03~pre1+dfsg-4), pxelinux (<< 3:6.03~pre1+dfsg-4), syslinux (<< 3:6.03~pre1+dfsg-4)
+Replaces: extlinux, isolinux, pxelinux, syslinux
+Filename: ./pool/deb/syslinux/syslinux-common_6.03~pre1+dfsg-4_amd64.deb
+Size: 846202
+MD5sum: b9d5d1d03746e7a214d5288949b0c956
+SHA1: 122c5585c0e73cee0e00e33f6112a78fce15c840
+SHA256: 5d1c12e4650a76976baf183f8befdbe6c6586c52f6c5777ef3f794e4b3ee69c1
+Section: admin
+Priority: optional
+Homepage: http://www.syslinux.org/
+Description: collection of bootloaders (common)
+ syslinux is a suite of bootloaders, currently supporting DOS FAT and NTFS
+ filesystems (SYSLINUX), Linux ext2/ext3/ext4, btrfs, and xfs filesystems
+ (EXTLINUX), PXE network boots (PXELINUX), or ISO 9660 CD-ROMs (ISOLINUX).
+ .
+ This package contains the common files.
+Original-Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+
+Package: syslinux-efi
+Source: syslinux
+Version: 3:6.03~pre1+dfsg-4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 409
+Depends: mtools
+Recommends: syslinux-common
+Suggests: dosfstools
+Breaks: syslinux-common (<< 3:6.03~pre1+dfsg-4)
+Replaces: syslinux-common
+Filename: ./pool/deb/syslinux/syslinux-efi_6.03~pre1+dfsg-4_amd64.deb
+Size: 130932
+MD5sum: a76b02d9c245f8cb69600fe42b4fff36
+SHA1: 0903f8a482ab63c8f03134ef2719dcff992f7119
+SHA256: 8ff95b8166b82447060cdba599af5b05ff82021808665121f3d2015a0b8ff10f
+Section: admin
+Priority: optional
+Homepage: http://www.syslinux.org/
+Description: collection of bootloaders (UEFI bootloader)
+ syslinux is a suite of bootloaders, currently supporting DOS FAT and NTFS
+ filesystems (SYSLINUX), Linux ext2/ext3/ext4, btrfs, and xfs filesystems
+ (EXTLINUX), PXE network boots (PXELINUX), or ISO 9660 CD-ROMs (ISOLINUX).
+ .
+ This package contains the bootloader for the Unified Extensible Firmware
+ Interface (EFI).
+Original-Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+
+Package: syslinux-utils
+Source: syslinux
+Version: 3:6.03~pre1+dfsg-4
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 147
+Depends: libc6 (>= 2.7)
+Suggests: libcrypt-passwdmd5-perl, libdigest-sha-perl
+Breaks: syslinux (<< 3:6.00~pre4+dfsg-5~), syslinux-common (<< 3:6.00~pre4+dfsg-5~)
+Replaces: syslinux, syslinux-common
+Filename: ./pool/deb/syslinux/syslinux-utils_6.03~pre1+dfsg-4_amd64.deb
+Size: 25282
+MD5sum: 0746c2dde693c72d9332fef54202550f
+SHA1: e17c7d806fde70632e28b57397a4aa94136acc36
+SHA256: c706e68f541e77fd19c6a83d97e48afb0d1be402f316e706e385620c8b5cd7e2
+Section: admin
+Priority: optional
+Homepage: http://www.syslinux.org/
+Description: collection of bootloaders (utilities)
+ syslinux is a suite of bootloaders, currently supporting DOS FAT and NTFS
+ filesystems (SYSLINUX), Linux ext2/ext3/ext4, btrfs, and xfs filesystems
+ (EXTLINUX), PXE network boots (PXELINUX), or ISO 9660 CD-ROMs (ISOLINUX).
+ .
+ This package contains the auxiliary utilities.
+Original-Maintainer: Daniel Baumann <mail@daniel-baumann.ch>
+
+Package: text2pdf
+Version: 1.0-20130907-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 40
+Provides: text2pdf
+Filename: ./pool/deb/misc/text2pdf_1.0-20130907-1_amd64.deb
+Size: 8066
+MD5sum: 367ef2ebe60c498a0dc2f8175f64086c
+SHA1: a956cdc384add54174bf4131fb42d8c74c801535
+SHA256: 86345a7a4f49d9cf9b83b26e7e2f1f0c38f5f8944dd1f44b04052ad3a88079c8
+Section: checkinstall
+Priority: extra
+Description: Text2PDF
+ Package created with checkinstall 1.6.2
+
+Package: tor
+Version: 1:0.3~git20141408.c69e96680a8db0d3d0c20e68f8f8d6727470ece4~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 14588
+Depends: libc6
+Conflicts: tor,tor-dev,tor-dbg,tor-doc,tor-geoipdb
+Provides: tor,tor-dev,tor-dbg,tor-doc,tor-geoipdb
+Filename: ./pool/deb/tor/tor_0.3~git20141408.c69e96680a8db0d3d0c20e68f8f8d6727470ece4~raring1-1_amd64.deb
+Size: 2997154
+MD5sum: b5f97598db3c54b25c2a237289843e70
+SHA1: d0b61574d99162a847316941232ef1e9d1a8892f
+SHA256: 15aa2c0f39e0d343821748080c0d915c30c48036ead82133bd6d9461b5942357
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: unshield
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Evgeni Golov <evgeni@debian.org>
+Installed-Size: 25
+Depends: libc6 (>= 2.10), libunshield0
+Filename: ./pool/deb/unshield/unshield_1.0-1_amd64.deb
+Size: 10662
+MD5sum: cadfb950d4b15cf8cf124a44a192f268
+SHA1: 4fe07684e80aba8834f1513b1341a579f8ce1712
+SHA256: b43255b1193430a94389c9ed3b1fe680cb06c6999d8f495ae984f18551b9b91d
+Section: utils
+Priority: optional
+Homepage: https://github.com/twogood/unshield/
+Description: extracts CAB files from InstallShield installers
+ This software extracts CAB files from InstallShield installers
+ used to be installed on Windows CE devices or Windows desktop
+ machines.
+
+Package: vba-m
+Version: 1:201212230610-git-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 8600
+Provides: vba-m
+Filename: ./pool/deb/vbam/vba-m_201212230610-git-1_amd64.deb
+Size: 1928540
+MD5sum: e321c5428446debe0bd4b0c5442706cb
+SHA1: 1b68b9e80de4a2f9285b906aa6da85842c7ddf13
+SHA256: 90ca406e6332bcd91d85c5a06f1415e790c97e6ec0c60b5adae4fce7f50b7ab5
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: warzone2100
+Version: 1:0.3~git20141002.df1b02a32adfb437d3463b22441a8a22474d9dd0~raring1-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 122208
+Depends: libc6,libphysfs1
+Conflicts: warzone2100,warzone2100-dev,warzone2100-dbg,warzone2100-doc,warzone21001
+Provides: warzone2100,warzone2100-dev,warzone2100-dbg,warzone2100-doc,warzone21001
+Filename: ./pool/deb/warzone2100/warzone2100_0.3~git20141002.df1b02a32adfb437d3463b22441a8a22474d9dd0~raring1-1_amd64.deb
+Size: 83407584
+MD5sum: 9cf85f10bf86b18e1a0bbd067d8f9a56
+SHA1: 5da32ebc1f0223bfbbd89c27b440f0ca52d5011c
+SHA256: c43d0129184b33d784c859db7fd7acfb17a67cdf5f7e964e8a99787b0415faf4
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: wget
+Version: 1:1.15.24-38a78-dirty-ubuntu1-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 3976
+Conflicts: wget
+Replaces: wget
+Provides: wget
+Filename: ./pool/deb/wget/wget_1.15.24-38a78-dirty-ubuntu1-1_amd64.deb
+Size: 603964
+MD5sum: 217f4d71a379db7c7a89d51b3c73ca22
+SHA1: b65c4d7f1faa003f7c1f5c96ff8a3a301bb03e03
+SHA256: a021f7585305165df0d1b1774d7d30521a36a42de235f8e7dd4584b41e6fcaef
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
+Package: wxmupen64plus
+Source: wxmupen64plus
+Version: 2:2.00~DEV-SVN:-201301211826
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 10000
+Depends: libgl1-mesa-glx | libgl1, libsdl1.2debian, libstdc++6, zlib1g, libc6, libwxbase2.9-0, libwxgtk2.9-0, mupen64plus
+Conflicts: wxmupen64plus
+Replaces: wxmupen64plus
+Provides: wxmupen64plus
+Filename: ./pool/deb/mupen64plus/wxmupen64plus_2.00~DEV-SVN:-201301211826_amd64.deb
+Size: 527318
+MD5sum: e4cec081454c8b37165e8abfc7bc635e
+SHA1: 37b2ba8b9bfcb802af7ed20d28cb7c646b16a7d6
+SHA256: e51debf30eff36ebd10a75802987d5a72c59bbe27eac0493921e41462bd58269
+Section: games
+Priority: extra
+Description: Package Handcreated by Kingtiger
+
+Package: x265
+Version: 1:0.26-20140814~ubuntu1-1
+Architecture: amd64
+Maintainer: root@D1520-LAPTOP1
+Installed-Size: 5596
+Depends: libc6, libstdc++6, libjs-jquery, libjs-underscore, multiarch-support
+Conflicts: x265, libx265-25, libx265-16, libx265, libx265-dev
+Replaces: libx265, libx265-25, libx265-dev
+Provides: x265, libx265-31, libx265, libx265-dev
+Filename: ./pool/deb/x265/x265_0.26-20140814~ubuntu1-1_amd64.deb
+Size: 649404
+MD5sum: 229cf134afd4ee223b52c5d132f57074
+SHA1: edf75618c3d915754307cdfcbe494d2ad0659398
+SHA256: de443c21c887c74755e6c45fb19361c3580f9c2cf3557031df45c86186b8686c
+Section: checkinstall
+Priority: extra
+Description: H.265/HEVC video encoder library for encoding video using the High Efficiency Video Coding (HEVC/H.265) standard
+ H.265/HEVC video encoder library for encoding video using the High Efficiency Video Coding (HEVC/H.265) standard
+
+Package: yasm
+Version: 1:1.2.0.39.g86fc.dirty-1
+Architecture: amd64
+Maintainer: mn2010@tormail.org
+Installed-Size: 16880
+Depends: libc6
+Conflicts: yasm,yasm-dev
+Replaces: yasm-dev
+Provides: yasm,yasm-dev
+Filename: ./pool/deb/yasm/yasm_1.2.0.39.g86fc.dirty-1_amd64.deb
+Size: 2277176
+MD5sum: ef269690f7b77b05a1160974e87d7af6
+SHA1: a60ebeea31e3ae6c255300f5bdfbca62a79108e7
+SHA256: 4294b4486fb558de48e9530080b41291c11024b681bcf885c76b4448fc08a8ff
+Section: checkinstall
+Priority: extra
+Description: Package created with checkinstall 1.6.2
+
