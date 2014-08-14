@@ -1,0 +1,70 @@
+###########################################
+INFO - INFO - INFO - INFO - INFO - INFO -
+###########################################
+
+
+
+ ______   ______    _______    ________  ________   ___   __      
+/_____/\ /_____/\ /_______/\  /_______/\/_______/\ /__/\ /__/\    
+\:::_ \ \\::::_\/_\::: _  \ \ \__.::._\/\::: _  \ \\::\_\\  \ \   
+ \:\ \ \ \\:\/___/\\::(_)  \/_   \::\ \  \::(_)  \ \\:. `-\  \ \  
+  \:\ \ \ \\::___\/_\::  _  \ \  _\::\ \__\:: __  \ \\:. _    \ \ 
+   \:\/.:| |\:\____/\\::(_)  \ \/__\::\__/\\:.\ \  \ \\. \`-\  \ \
+    \____/_/ \_____\/ \_______\/\________\/ \__\/\__\/ \__\/ \__\/
+                                                                  
+
+
+-------------------------------------------------------------------
+
+URL List -=-=-=-=-=-
+
+http://eu4ch47n42ikmtpd.onion/repository/
+https://eu4ch47n42ikmtpd.tor2web.org/repository/
+https://eu4ch47n42ikmtpd.onion.to/repository/
+
+-=-=-=-=-=-=-=-=-=-=
+
+Distribution -=--=-=
+
+Ubuntu
+Debian
+
+-=-=-=-=-=-=-=-=-=-=
+
+
+Please add "deb 'url' 'distribution' bleed" to youre apt source list.
+
+
+---------------------------------------------------------------------
+
+
+
+                                                                                                 
+                                                                                                 
+               AAA               RRRRRRRRRRRRRRRRR           CCCCCCCCCCCCCHHHHHHHHH     HHHHHHHHH
+              A:::A              R::::::::::::::::R       CCC::::::::::::CH:::::::H     H:::::::H
+             A:::::A             R::::::RRRRRR:::::R    CC:::::::::::::::CH:::::::H     H:::::::H
+            A:::::::A            RR:::::R     R:::::R  C:::::CCCCCCCC::::CHH::::::H     H::::::HH
+           A:::::::::A             R::::R     R:::::R C:::::C       CCCCCC  H:::::H     H:::::H  
+          A:::::A:::::A            R::::R     R:::::RC:::::C                H:::::H     H:::::H  
+         A:::::A A:::::A           R::::RRRRRR:::::R C:::::C                H::::::HHHHH::::::H  
+        A:::::A   A:::::A          R:::::::::::::RR  C:::::C                H:::::::::::::::::H  
+       A:::::A     A:::::A         R::::RRRRRR:::::R C:::::C                H:::::::::::::::::H  
+      A:::::AAAAAAAAA:::::A        R::::R     R:::::RC:::::C                H::::::HHHHH::::::H  
+     A:::::::::::::::::::::A       R::::R     R:::::RC:::::C                H:::::H     H:::::H  
+    A:::::AAAAAAAAAAAAA:::::A      R::::R     R:::::R C:::::C       CCCCCC  H:::::H     H:::::H  
+   A:::::A             A:::::A   RR:::::R     R:::::R  C:::::CCCCCCCC::::CHH::::::H     H::::::HH
+  A:::::A               A:::::A  R::::::R     R:::::R   CC:::::::::::::::CH:::::::H     H:::::::H
+ A:::::A                 A:::::A R::::::R     R:::::R     CCC::::::::::::CH:::::::H     H:::::::H
+AAAAAAA                   AAAAAAARRRRRRRR     RRRRRRR        CCCCCCCCCCCCCHHHHHHHHH     HHHHHHHHH
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                                 
+
+--------------------------------------------------------------------------------------------------
+
+At this moment in time, ARCHlinux Repository is NOT available. 
